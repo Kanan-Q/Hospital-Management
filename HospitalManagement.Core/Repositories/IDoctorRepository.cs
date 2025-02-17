@@ -1,0 +1,20 @@
+﻿using HospitalManagement.Core.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HospitalManagement.Core.Repositories
+{
+    public interface IDoctorRepository
+    {
+        Task <List<Doctor>> GetAllAsync();
+        Task UpdateAsync(Doctor doctor);
+        Task DeleteAsync(Doctor doctor);
+        Task<Doctor?> GetByIdAsync(int id);
+        Task<IEnumerable<Doctor>> SearchAsync(string query);
+
+    }
+}

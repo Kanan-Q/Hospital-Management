@@ -1,0 +1,14 @@
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\bin\Debug\net8.0\HospitalManagement.Core.deps.json
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\bin\Debug\net8.0\HospitalManagement.Core.dll
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\bin\Debug\net8.0\HospitalManagement.Core.pdb
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\obj\Debug\net8.0\HospitalManagement.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\obj\Debug\net8.0\HospitalManagement.Core.AssemblyInfoInputs.cache
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\obj\Debug\net8.0\HospitalManagement.Core.AssemblyInfo.cs
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\obj\Debug\net8.0\HospitalManagement.Core.csproj.CoreCompileInputs.cache
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\obj\Debug\net8.0\HospitalManagement.Core.dll
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\obj\Debug\net8.0\refint\HospitalManagement.Core.dll
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\obj\Debug\net8.0\HospitalManagement.Core.pdb
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\obj\Debug\net8.0\ref\HospitalManagement.Core.dll
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\bin\Debug\net8.0\HospitalManagement.Core.runtimeconfig.json
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\obj\Debug\net8.0\HospitalManagement.Core.csproj.AssemblyReference.cache
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Core\obj\Debug\net8.0\HospitalManagement.Core.genruntimeconfig.cache

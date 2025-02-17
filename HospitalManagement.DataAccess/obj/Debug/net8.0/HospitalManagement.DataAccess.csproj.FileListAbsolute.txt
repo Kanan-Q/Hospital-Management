@@ -1,0 +1,17 @@
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\bin\Debug\net8.0\HospitalManagement.DataAccess.deps.json
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\bin\Debug\net8.0\HospitalManagement.DataAccess.runtimeconfig.json
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\bin\Debug\net8.0\HospitalManagement.DataAccess.dll
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\bin\Debug\net8.0\HospitalManagement.DataAccess.pdb
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\bin\Debug\net8.0\HospitalManagement.Core.dll
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\bin\Debug\net8.0\HospitalManagement.Core.pdb
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\HospitalManagement.DataAccess.csproj.AssemblyReference.cache
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\HospitalManagement.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\HospitalManagement.DataAccess.AssemblyInfoInputs.cache
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\HospitalManagement.DataAccess.AssemblyInfo.cs
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\HospitalManagement.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\Hospital.B1F2CF5C.Up2Date
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\HospitalManagement.DataAccess.dll
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\refint\HospitalManagement.DataAccess.dll
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\HospitalManagement.DataAccess.pdb
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\HospitalManagement.DataAccess.genruntimeconfig.cache
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\ref\HospitalManagement.DataAccess.dll
