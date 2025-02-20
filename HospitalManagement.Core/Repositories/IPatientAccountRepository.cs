@@ -9,9 +9,10 @@ namespace HospitalManagement.Core.Repositories
 {
     public interface IPatientAccountRepository
     {
+        Task AddAsync(PatientAccount patientAccount);
         Task<IEnumerable<PatientAccount>> GetAllAsync();
         Task<PatientAccount> GetByFinCodeAsync(string finCode);
-        Task AddAsync(PatientAccount patientAccount);
+        Task<IEnumerable<Prescription>> SearchAsync(string query);
 
     }
 }

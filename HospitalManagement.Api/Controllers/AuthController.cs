@@ -23,23 +23,22 @@ namespace HospitalManagement.Api.Controllers
 
     public class AuthController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly AppDbContext _sql;
         private readonly JwtHelper _jwtHelper;
         private readonly IDoctorRepository _repo;
         private readonly IHubContext<NotificationHub> _hubContext;
 
-        public AuthController(AppDbContext context, IDoctorRepository repo, IConfiguration configuration, IHubContext<NotificationHub> hubContext)
+        public AuthController(AppDbContext sql, IDoctorRepository repo, IConfiguration configuration, IHubContext<NotificationHub> hubContext)
         {
-            _context = context;
+            _sql = sql;
             _jwtHelper = new JwtHelper(configuration);
             _repo = repo;
-            _hubContext = hubContext; // SignalR Hub-u inject edirik
+            _hubContext = hubContext;
         }
 
         [HttpPost]
         public async Task<IActionResult> Login([FromBody] DoctorLoginDTO model)
         {
-            // Admin hardkodlu olaraq login olunur
             if (model.UsernameOrEmail == "admin@example.com" && model.Password == "adminpassword123")
             {
                 var token = _jwtHelper.GenerateJwtToken(model.UsernameOrEmail, "Admin", 0);
@@ -47,14 +46,13 @@ namespace HospitalManagement.Api.Controllers
                 return Ok(new { Token = token });
             }
 
-            // Doctor üçün login prosesi
-            var doctor = await _context.Doctors.FirstOrDefaultAsync(d => d.Email == model.UsernameOrEmail || d.Name == model.UsernameOrEmail);
+            var doctor = await _sql.Doctors.FirstOrDefaultAsync(d => d.Email == model.UsernameOrEmail || d.Name == model.UsernameOrEmail);
             if (doctor == null || !VerifyPassword(model.Password, doctor.PasswordHash))
             {
                 return Unauthorized(new { message = "Invalid email or password." });
             }
             doctor.IsActive = true;
-            await _context.SaveChangesAsync();
+            await _sql.SaveChangesAsync();
 
             var tokenDoctor = _jwtHelper.GenerateJwtToken(doctor.Email, "Doctor", doctor.Id);
             await _hubContext.Clients.All.SendAsync("UserStatusChanged", doctor.Name);
@@ -66,7 +64,7 @@ namespace HospitalManagement.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Register([FromBody] DoctorRegisterDTO model)
         {
-            if (await _context.Doctors.AnyAsync(d => d.Email == model.Email))
+            if (await _sql.Doctors.AnyAsync(d => d.Email == model.Email))
             {
                 return BadRequest(new { message = "Email or Name already in use." });
             }
@@ -86,15 +84,14 @@ namespace HospitalManagement.Api.Controllers
                 Phone = model.Phone,
             };
 
-            await _context.Doctors.AddAsync(doctor);
-            await _context.SaveChangesAsync();
+            await _sql.Doctors.AddAsync(doctor);
+            await _sql.SaveChangesAsync();
 
             return Ok(new { message = "Doctor registered successfully." });
         }
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
-            //Response.Cookies.Delete("Authorization");
             var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
 
             if (string.IsNullOrEmpty(token))
@@ -114,18 +111,16 @@ namespace HospitalManagement.Api.Controllers
                 return Unauthorized(new { message = "User not found in token." });
             }
 
-            var doctor = await _context.Doctors.FirstOrDefaultAsync(d => d.Email == usernameOrEmail || d.Name == usernameOrEmail);
+            var doctor = await _sql.Doctors.FirstOrDefaultAsync(d => d.Email == usernameOrEmail || d.Name == usernameOrEmail);
             if (doctor == null)
             {
                 return Unauthorized(new { message = "User not found in database." });
             }
 
-            // 4. Doctor'u deaktiv edirik
             doctor.IsActive = false;
-            await _context.SaveChangesAsync();
+            await _sql.SaveChangesAsync();
 
             await _hubContext.Clients.All.SendAsync("UserStatusChanged", usernameOrEmail, false);
-            //Response.Headers.Add("Clear-Swagger-Token", "true");
             return Ok(new { message = "User logged out successfully." });
 
         }
@@ -142,7 +137,7 @@ namespace HospitalManagement.Api.Controllers
                 return Unauthorized(new { message = "User not authenticated." });
             }
 
-            var doctor = await _context.Doctors.Include(x=>x.Department).FirstOrDefaultAsync(d => d.Email == userEmail);
+            var doctor = await _sql.Doctors.Include(x=>x.Department).FirstOrDefaultAsync(d => d.Email == userEmail);
 
             if (doctor == null)
             {

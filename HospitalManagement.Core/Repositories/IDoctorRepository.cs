@@ -10,7 +10,7 @@ namespace HospitalManagement.Core.Repositories
 {
     public interface IDoctorRepository
     {
-        Task <List<Doctor>> GetAllAsync();
+        Task <ICollection<Doctor>> GetAllAsync();
         Task UpdateAsync(Doctor doctor);
         Task DeleteAsync(Doctor doctor);
         Task<Doctor?> GetByIdAsync(int id);

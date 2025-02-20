@@ -24,7 +24,6 @@ namespace HospitalManagement.DataAccess.Repositories
             _sql.Nurses.Remove(nurse);
             await _sql.SaveChangesAsync();
         }
-
         public async Task UpdateAsync(Nurse nurse)
         {
             var data = await _sql.Nurses.FindAsync(nurse.Id);
@@ -39,15 +38,8 @@ namespace HospitalManagement.DataAccess.Repositories
             await _sql.SaveChangesAsync();
         }
         public async Task<IEnumerable<Nurse>> GetAllAsync() => await _sql.Nurses.Include(x => x.Department).AsNoTracking().ToListAsync();
-        public async Task<Nurse?> GetByIdAsync(int id) => await _sql.Nurses.Include(x=>x.Department).Where(x => x.Id == id).FirstOrDefaultAsync();
-        public async Task<IEnumerable<Nurse>> SearchAsync(string query)
-        {
-            return await _sql.Nurses.Where(p => p.Name.Contains(query) ||
-                            p.Surname.Contains(query) ||
-                            p.Email.Contains(query) ||
-                            p.FIN.Contains(query) ||
-                            p.Series.Contains(query) ||
-                     p.Age.ToString().Contains(query)).ToListAsync();
-        }
+        public async Task<Nurse?> GetByIdAsync(int id) => await _sql.Nurses.Include(x => x.Department).Where(x => x.Id == id).FirstOrDefaultAsync();
+        public async Task<IEnumerable<Nurse>> SearchAsync(string query) => await _sql.Nurses.Where(p => p.Name.Contains(query) || p.Surname.Contains(query) || p.Email.Contains(query) || p.FIN.Contains(query) || p.Series.Contains(query) || p.Age.ToString().Contains(query)).ToListAsync();
+
     }
 }

@@ -5,34 +5,23 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace HospitalManagement.DataAccess.Repositories
 {
-    public class PatientAccountRepository : IPatientAccountRepository
+    public class PatientAccountRepository(AppDbContext _sql) : IPatientAccountRepository
     {
-        private readonly AppDbContext _context;
-
-        public PatientAccountRepository(AppDbContext context)
-        {
-            _context = context;
-        }
-
-        public async Task<IEnumerable<PatientAccount>> GetAllAsync()
-        {
-            return await _context.PatientAccounts.ToListAsync();
-        }
-
-        public async Task<PatientAccount> GetByFinCodeAsync(string finCode)
-        {
-            return await _context.PatientAccounts.FirstOrDefaultAsync(a => a.FinCode == finCode);
-        }
 
         public async Task AddAsync(PatientAccount patientAccount)
         {
-            await _context.PatientAccounts.AddAsync(patientAccount);
-            await _context.SaveChangesAsync();
+            await _sql.PatientAccounts.AddAsync(patientAccount);
+            await _sql.SaveChangesAsync();
         }
+        public async Task<IEnumerable<PatientAccount>> GetAllAsync() => await _sql.PatientAccounts.ToListAsync();
+        public async Task<PatientAccount> GetByFinCodeAsync(string finCode) => await _sql.PatientAccounts.FirstOrDefaultAsync(a => a.FinCode == finCode);
+        public async Task<IEnumerable<Prescription>> SearchAsync(string query) => await _sql.Prescriptions.AsQueryable().Where(x => x.Doctor.Name.Contains(query) || x.Doctor.Surname.Contains(query) || x.Doctor.Email.Contains(query) || x.Doctor.Department.DepartmentName.Contains(query)).ToListAsync();
+
     }
 }

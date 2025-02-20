@@ -29,20 +29,15 @@ namespace HospitalManagement.DataAccess.Repositories
             data.Phone = expenses.Phone;
             await _sql.SaveChangesAsync();
         }
-
         public async Task DeleteAsync(Expense expenses)
         {
             _sql.Expenses.Remove(expenses);
             await _sql.SaveChangesAsync();
         }
-
         public async Task<IEnumerable<Expense>> GetAllAsync() => await _sql.Expenses.AsNoTracking().ToListAsync();
-
         public async Task<Expense?> GetByIdAsync(int id) => await _sql.Expenses.Where(x => x.Id == id).FirstOrDefaultAsync();
-        public async Task<IEnumerable<Expense>> SearchAsync(string query)
-        {
-            return await _sql.Expenses.Where(p => p.Expenses.ToString().Contains(query) || p.Name.Contains(query) || p.Surname.Contains(query)||p.Phone.Contains(query)|| p.Source.Contains(query)||p.Quantity.ToString().Contains(query)).ToListAsync();
-        }
+        public async Task<IEnumerable<Expense>> SearchAsync(string query)=>await _sql.Expenses.Where(p => p.Expenses.ToString().Contains(query) || p.Name.Contains(query) || p.Surname.Contains(query)||p.Phone.Contains(query)|| p.Source.Contains(query)||p.Quantity.ToString().Contains(query)).ToListAsync();
+        
 
     }
 }

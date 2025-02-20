@@ -55,7 +55,7 @@ namespace HospitalManagement.Api.Controllers
                 x.Series,
                 x.Address,
                 Prescription = x.Prescriptions.Select(x => new { x.Doctor.Name, x.MedicationName }).ToList(),
-                Doctors = x.DoctorPatients.Select(y => new { y.Doctor.Name,y.Doctor.Surname }).ToList()
+                Doctors = x.DoctorPatients.Select(y => new { y.Doctor.Name, y.Doctor.Surname }).ToList()
 
             }).ToList();
             return Ok(dto);
@@ -148,18 +148,16 @@ namespace HospitalManagement.Api.Controllers
         {
             var doctorId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
 
-            // Composite key ilə resepti tap
             var prescription = await _sql.Prescriptions
                 .FirstOrDefaultAsync(p => p.PatientId == id && p.DoctorId == doctorId);
 
             if (prescription == null)
                 return NotFound(new { message = "Prescription not found or not authorized." });
 
-            // Yeni məlumatları əlavə et (boş gələnləri dəyişmə)
             if (!string.IsNullOrWhiteSpace(dto.MedicationName))
                 prescription.MedicationName = dto.MedicationName;
 
-         
+
             await _sql.SaveChangesAsync();
 
             return Ok(new
@@ -172,38 +170,44 @@ namespace HospitalManagement.Api.Controllers
 
 
         [HttpGet]
-            public async Task<IActionResult> MyInfo()
+        public async Task<IActionResult> MyInfo()
+        {
+            var user = HttpContext.User;
+
+            var fullName = user.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
+            var finCode = user.Claims.FirstOrDefault(c => c.Type == "FinCode")?.Value;
+
+            if (finCode == null || fullName == null)
             {
-                var user = HttpContext.User;
-
-                // Token-dən FinCode və FullName məlumatlarını əldə edirik
-                var finCode = user.Claims.FirstOrDefault(c => c.Type == "FinCode")?.Value;
-                var fullName = user.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
-
-                if (finCode == null || fullName == null)
-                {
-                    return Unauthorized("Invalid token");
-                }
-
-                // Verilənlər bazasında xəstə məlumatlarını tapırıq
-                var patient = await _repo.GetByFinCodeAsync(finCode);
-
-                if (patient == null || patient.Name != fullName)
-                {
-                    return NotFound("Patient not found or data mismatch");
-                }
-
-                return Ok(new
-                {
-                    FullName = patient.Name,
-                    FinCode = patient.FIN,
-                    Email = patient.Email,
-                    Series = patient.Series,
-                    Age = patient.Age,
-                    receipt = patient.Prescriptions
-
-                });
+                return Unauthorized("Invalid token");
             }
+
+            var patient = await _repo.GetByFinCodeAsync(finCode);
+
+            if (patient == null || patient.Name != fullName)
+            {
+                return NotFound("Patient not found or data mismatch");
+            }
+
+            return Ok(new
+            {
+                Id=patient.Id,
+                Name = patient.Name,
+                FinCode = patient.FIN,
+                Surname = patient.Surname,
+                Email = patient.Email,
+                Series = patient.Series,
+                Age = patient.Age,
+                receipt = patient.Prescriptions.Select(r => new
+                {
+                    DoctorName = r.Doctor.Name,
+                    Medication = r.MedicationName
+                })
+                .ToList(),
+
+
+            });
         }
     }
+}
 

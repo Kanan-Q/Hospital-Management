@@ -1,5 +1,4 @@
-﻿using HospitalManagement.BL.Enum;
-using HospitalManagement.Core.Entities.Common;
+﻿using HospitalManagement.Core.Entities.Common;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;

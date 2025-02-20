@@ -17,7 +17,6 @@ namespace HospitalManagement.Core.Repositories
         Task <Patient?> GetByFinCodeAsync(string finCode);
         Task<IEnumerable<Patient>> AllAsync(ClaimsPrincipal user);
         Task<IEnumerable<Patient>> SearchAsync(string query,ClaimsPrincipal user);
-        Task<IEnumerable<Patient>> GetPatientWithReceiptsAsync(string finCode);
 
     }
 }

@@ -608,5 +608,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.PatientAuthController",
+    "Method": "Search",
+    "RelativePath": "api/PatientAuth/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

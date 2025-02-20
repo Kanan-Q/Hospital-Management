@@ -169,3 +169,4 @@ C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Api\bin\Debug\
 C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Api\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Api\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
 C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Api\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.Api\obj\Debug\net8.0\HospitalManagement.Api.sourcelink.json

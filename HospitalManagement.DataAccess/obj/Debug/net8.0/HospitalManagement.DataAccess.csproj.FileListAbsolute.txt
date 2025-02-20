@@ -15,3 +15,4 @@ C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj
 C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\HospitalManagement.DataAccess.pdb
 C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\HospitalManagement.DataAccess.genruntimeconfig.cache
 C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\ref\HospitalManagement.DataAccess.dll
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.DataAccess\obj\Debug\net8.0\HospitalManagement.DataAccess.sourcelink.json

@@ -28,6 +28,7 @@ namespace HospitalManagement.Api.Controllers
                 x.Salary,
                 x.Series,
                 x.Address,
+                x.IsDeleted,
                 DepartmentName = x.Department.DepartmentName
             }).ToList();
 

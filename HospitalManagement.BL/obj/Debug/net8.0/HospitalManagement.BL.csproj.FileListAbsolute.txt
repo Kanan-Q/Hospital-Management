@@ -17,3 +17,4 @@ C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.BL\obj\Debug\n
 C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.BL\obj\Debug\net8.0\HospitalManagement.BL.pdb
 C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.BL\obj\Debug\net8.0\HospitalManagement.BL.genruntimeconfig.cache
 C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.BL\obj\Debug\net8.0\ref\HospitalManagement.BL.dll
+C:\Users\kanan\source\repos\HospitalManagement\HospitalManagement.BL\obj\Debug\net8.0\HospitalManagement.BL.sourcelink.json
