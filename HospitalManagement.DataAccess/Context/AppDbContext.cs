@@ -1,4 +1,5 @@
 ﻿using HospitalManagement.Core.Entities;
+using HospitalManagement.Core.Entities.Common;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -23,6 +24,8 @@ namespace HospitalManagement.DataAccess.Context
         public DbSet<PatientAccount> PatientAccounts { get; set; }
         public DbSet<Sanitary> Sanitaries { get; set; }
         public DbSet<Therapist> Therapists { get; set; }
+        public DbSet<Diagnostic> Diagnostics { get; set; }
+        public DbSet<Equipment> Equipments { get; set; }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

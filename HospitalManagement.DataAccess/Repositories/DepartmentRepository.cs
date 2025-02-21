@@ -19,8 +19,8 @@ namespace HospitalManagement.DataAccess.Repositories
         }
         public async Task UpdateAsync(Department department)
         {
-            var data=await _sql.Departments.FindAsync(department.Id);
-            data.DepartmentName=department.DepartmentName;
+            var data = await _sql.Departments.FindAsync(department.Id);
+            data.DepartmentName = department.DepartmentName;
             await _sql.SaveChangesAsync();
         }
         public async Task DeleteAsync(Department department)
@@ -29,9 +29,7 @@ namespace HospitalManagement.DataAccess.Repositories
             await _sql.SaveChangesAsync();
         }
         public async Task<IEnumerable<Department>> GetAllAsync() => await _sql.Departments.AsNoTracking().ToListAsync();
-        public async Task<Department?> GetByIdAsync(int id)=>await _sql.Departments.Where(x=>x.Id==id).FirstOrDefaultAsync();
-        public async Task<IEnumerable<Department>> SearchAsync(string query)=>await _sql.Departments.Where(p => p.DepartmentName.Contains(query)).ToListAsync();
-        
-
+        public async Task<Department?> GetByIdAsync(int id) => await _sql.Departments.Where(x => x.Id == id).FirstOrDefaultAsync();
+        public async Task<IEnumerable<Department>> SearchAsync(string query) => await _sql.Departments.Where(p => p.DepartmentName.Contains(query)).ToListAsync()
     }
 }
