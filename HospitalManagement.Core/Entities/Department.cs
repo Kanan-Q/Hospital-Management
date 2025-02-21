@@ -12,5 +12,7 @@ namespace HospitalManagement.Core.Entities
         public string DepartmentName { get; set; }
         public ICollection<Nurse> Nurses { get; set; }
         public ICollection<Doctor> Doctors { get; set; }
+        public ICollection<Sanitary> Sanitaries { get; set; }
+        public ICollection<Therapist> Therapists { get; set; }
     }
 }

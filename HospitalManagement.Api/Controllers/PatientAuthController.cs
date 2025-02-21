@@ -101,10 +101,8 @@ namespace HospitalManagement.Api.Controllers
             }
         }
 
-        private bool VerifyPassword(string password, string storedHash)
-        {
-            return HashPassword(password) == storedHash;
-        }
+        private bool VerifyPassword(string password, string storedHash)=>HashPassword(password) == storedHash;
+        
     }
 }
 

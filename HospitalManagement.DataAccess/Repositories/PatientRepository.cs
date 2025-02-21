@@ -37,7 +37,7 @@ namespace HospitalManagement.DataAccess.Repositories
             data.Address = patient.Address;
             await _sql.SaveChangesAsync();
         }
-        public async Task<Patient?> GetByIdAsync(int id) => await _sql.Patients.Include(x => x.Prescriptions).Where(x => x.Id == id).FirstOrDefaultAsync();
+        public async Task<Patient?> GetByIdAsync(int id) => await _sql.Patients.Include(x => x.Prescriptions).ThenInclude(x=>x.Doctor.Department).Where(x => x.Id == id).FirstOrDefaultAsync();
         public async Task<Patient?> GetByFinCodeAsync(string finCode) => await _sql.Patients.Include(x => x.Prescriptions).ThenInclude(p => p.Doctor.Department).Where(x => x.FIN == finCode).FirstOrDefaultAsync();
         public async Task<IEnumerable<Patient>> AllAsync(ClaimsPrincipal user)
         {

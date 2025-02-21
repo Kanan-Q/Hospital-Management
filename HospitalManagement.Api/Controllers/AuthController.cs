@@ -19,8 +19,6 @@ namespace HospitalManagement.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-
-
     public class AuthController : ControllerBase
     {
         private readonly AppDbContext _sql;
@@ -165,11 +163,8 @@ namespace HospitalManagement.Api.Controllers
         }
         [Authorize(Roles = "Admin")]
         [HttpGet]
-        public async Task<IActionResult> GetAll()
-        {
-            var doctor = await _repo.GetAllAsync();
-            return Ok(doctor);
-        }
+        public async Task<IActionResult> GetAll()=>Ok(await _repo.GetAllAsync());
+        
         [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)

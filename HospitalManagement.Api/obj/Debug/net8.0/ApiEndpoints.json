@@ -1,15 +1,5 @@
 [
   {
-    "ContainingType": "AccountController",
-    "Method": "Get",
-    "RelativePath": "api/account",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "HospitalManagement.Api.Controllers.AuthController",
     "Method": "Delete",
     "RelativePath": "api/Auth/Delete/{id}",
@@ -621,6 +611,196 @@
         "Name": "query",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.SanitaryController",
+    "Method": "Create",
+    "RelativePath": "api/Sanitary/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.Sanitary.SanitaryCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.SanitaryController",
+    "Method": "Delete",
+    "RelativePath": "api/Sanitary/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.SanitaryController",
+    "Method": "GetAll",
+    "RelativePath": "api/Sanitary/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.SanitaryController",
+    "Method": "GetById",
+    "RelativePath": "api/Sanitary/GetById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.SanitaryController",
+    "Method": "Search",
+    "RelativePath": "api/Sanitary/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.SanitaryController",
+    "Method": "Update",
+    "RelativePath": "api/Sanitary/Update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.Sanitary.SanitaryUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.TherapistController",
+    "Method": "Create",
+    "RelativePath": "api/Therapist/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.Therapist.TherapistCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.TherapistController",
+    "Method": "Delete",
+    "RelativePath": "api/Therapist/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.TherapistController",
+    "Method": "GetAll",
+    "RelativePath": "api/Therapist/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.TherapistController",
+    "Method": "GetById",
+    "RelativePath": "api/Therapist/GetById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.TherapistController",
+    "Method": "Search",
+    "RelativePath": "api/Therapist/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.TherapistController",
+    "Method": "Update",
+    "RelativePath": "api/Therapist/Update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.Therapist.TherapistUpdateDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

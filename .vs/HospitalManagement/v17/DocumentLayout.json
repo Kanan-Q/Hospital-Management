@@ -3,64 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\repositories\\ipatientaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\repositories\\ipatientaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|solutionrelative:hospitalmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Migrations\\20250221102445_therapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HospitalManagement.DataAccess\\Migrations\\20250221102445_therapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\configuration\\therapistconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\configuration\\therapistconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\configuration\\sanitaryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\configuration\\sanitaryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|solutionrelative:hospitalmanagement.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.api\\controllers\\therapistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|solutionrelative:hospitalmanagement.api\\controllers\\therapistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.api\\controllers\\sanitarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|solutionrelative:hospitalmanagement.api\\controllers\\sanitarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.bl\\dto\\therapist\\therapistupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|solutionrelative:hospitalmanagement.bl\\dto\\therapist\\therapistupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.bl\\dto\\therapist\\therapistcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|solutionrelative:hospitalmanagement.bl\\dto\\therapist\\therapistcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.bl\\dto\\sanitary\\sanitarycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|solutionrelative:hospitalmanagement.bl\\dto\\sanitary\\sanitarycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.bl\\dto\\sanitary\\sanitaryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|solutionrelative:hospitalmanagement.bl\\dto\\sanitary\\sanitaryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\repositories\\therapistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\repositories\\therapistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\repositories\\idoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\repositories\\idoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\repositories\\sanitaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\repositories\\sanitaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\repositories\\isanitaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\repositories\\isanitaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\repositories\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\repositories\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\repositories\\itherapistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\repositories\\itherapistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\entities\\therapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\entities\\therapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\repositories\\patientaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\repositories\\patientaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\repositories\\nurserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\repositories\\nurserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\repositories\\expensesrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\repositories\\expensesrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\repositories\\inurserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\repositories\\inurserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\repositories\\iexpensesrepsitories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\repositories\\iexpensesrepsitories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\repositories\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\repositories\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\entities\\sanitary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\entities\\sanitary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.api\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,72 +87,60 @@
       "RelativeMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|solutionrelative:hospitalmanagement.api\\controllers\\patientauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|solutionrelative:hospitalmanagement.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.api\\controllers\\nursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|solutionrelative:hospitalmanagement.api\\controllers\\nursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.api\\controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|solutionrelative:hospitalmanagement.api\\controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.bl\\dto\\nurse\\nursecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|solutionrelative:hospitalmanagement.bl\\dto\\nurse\\nursecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|solutionrelative:hospitalmanagement.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.api\\controllers\\allcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|solutionrelative:hospitalmanagement.api\\controllers\\allcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.api\\controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|solutionrelative:hospitalmanagement.api\\controllers\\expensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\entities\\patientaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\entities\\patientaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\repositories\\nurserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\repositories\\nurserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\entities\\nurse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\entities\\nurse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C088B131-48CF-4ACD-9442-597605CAFB34}|HospitalManagement.Api\\HospitalManagement.Api.csproj|solutionrelative:hospitalmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.bl\\helper\\screenshotblocker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|solutionrelative:hospitalmanagement.bl\\helper\\screenshotblocker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.bl\\helper\\processblocker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|solutionrelative:hospitalmanagement.bl\\helper\\processblocker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\entities\\expense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\entities\\expense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.bl\\validator\\expense\\expensecreatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|solutionrelative:hospitalmanagement.bl\\validator\\expense\\expensecreatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.bl\\validator\\expense\\expenceupdatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|solutionrelative:hospitalmanagement.bl\\validator\\expense\\expenceupdatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\configuration\\nurseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\configuration\\nurseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\configuration\\expenseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\configuration\\expenseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\configuration\\departmentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\configuration\\departmentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\configuration\\doctorpatientconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\configuration\\doctorpatientconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.bl\\validator\\department\\departmentcreatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8CDFB83-29FA-4A55-AAAC-386549318D28}|HospitalManagement.BL\\HospitalManagement.BL.csproj|solutionrelative:hospitalmanagement.bl\\validator\\department\\departmentcreatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\configuration\\doctorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\configuration\\doctorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\repositories\\inurserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\repositories\\inurserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.dataaccess\\migrations\\20250215160611_o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B4B88AB-9657-4EF2-B737-8B5E46A4397E}|HospitalManagement.DataAccess\\HospitalManagement.DataAccess.csproj|solutionrelative:hospitalmanagement.dataaccess\\migrations\\20250215160611_o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|c:\\users\\kanan\\source\\repos\\hospitalmanagement\\hospitalmanagement.core\\repositories\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B7599B-9469-4E82-9D8E-6358347A6A93}|HospitalManagement.Core\\HospitalManagement.Core.csproj|solutionrelative:hospitalmanagement.core\\repositories\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -146,7 +150,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -162,432 +166,443 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DepartmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\DepartmentRepository.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Repositories\\DepartmentRepository.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\DepartmentRepository.cs",
-              "RelativeToolTip": "HospitalManagement.DataAccess\\Repositories\\DepartmentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T11:23:05.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DoctorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\DoctorRepository.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Repositories\\DoctorRepository.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\DoctorRepository.cs",
-              "RelativeToolTip": "HospitalManagement.DataAccess\\Repositories\\DoctorRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T10:19:34.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IDoctorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\IDoctorRepository.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Core\\Repositories\\IDoctorRepository.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\IDoctorRepository.cs",
-              "RelativeToolTip": "HospitalManagement.Core\\Repositories\\IDoctorRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T15:58:27.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "HospitalManagement.DataAccess\\Context\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:17:40.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAJYAAAAAAAAAAAA/wBwAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T14:27:50.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PatientRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\PatientRepository.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Repositories\\PatientRepository.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\PatientRepository.cs",
-              "RelativeToolTip": "HospitalManagement.DataAccess\\Repositories\\PatientRepository.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAcwEcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T08:46:43.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IPatientAccountRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\IPatientAccountRepository.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Core\\Repositories\\IPatientAccountRepository.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\IPatientAccountRepository.cs",
-              "RelativeToolTip": "HospitalManagement.Core\\Repositories\\IPatientAccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T17:57:57.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Doctor.cs",
               "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Doctor.cs",
               "RelativeDocumentMoniker": "HospitalManagement.Core\\Entities\\Doctor.cs",
               "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Doctor.cs",
               "RelativeToolTip": "HospitalManagement.Core\\Entities\\Doctor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T12:47:33.401Z",
+              "WhenOpened": "2025-02-21T10:21:49.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IPatientRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\IPatientRepository.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Core\\Repositories\\IPatientRepository.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\IPatientRepository.cs",
-              "RelativeToolTip": "HospitalManagement.Core\\Repositories\\IPatientRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "TherapistConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\TherapistConfiguration.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Configuration\\TherapistConfiguration.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\TherapistConfiguration.cs",
+              "RelativeToolTip": "HospitalManagement.DataAccess\\Configuration\\TherapistConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T08:46:25.115Z",
+              "WhenOpened": "2025-02-21T10:20:09.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TherapistUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\DTO\\Therapist\\TherapistUpdateDTO.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.BL\\DTO\\Therapist\\TherapistUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\DTO\\Therapist\\TherapistUpdateDTO.cs",
+              "RelativeToolTip": "HospitalManagement.BL\\DTO\\Therapist\\TherapistUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T10:14:42.237Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "PatientAccountRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\PatientAccountRepository.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Repositories\\PatientAccountRepository.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\PatientAccountRepository.cs",
-              "RelativeToolTip": "HospitalManagement.DataAccess\\Repositories\\PatientAccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Title": "TherapistCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\DTO\\Therapist\\TherapistCreateDTO.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.BL\\DTO\\Therapist\\TherapistCreateDTO.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\DTO\\Therapist\\TherapistCreateDTO.cs",
+              "RelativeToolTip": "HospitalManagement.BL\\DTO\\Therapist\\TherapistCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T15:46:04.078Z",
+              "WhenOpened": "2025-02-21T10:14:31.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NurseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\NurseRepository.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Repositories\\NurseRepository.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\NurseRepository.cs",
-              "RelativeToolTip": "HospitalManagement.DataAccess\\Repositories\\NurseRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T12:43:53.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ExpensesRepositories.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\ExpensesRepositories.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Repositories\\ExpensesRepositories.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\ExpensesRepositories.cs",
-              "RelativeToolTip": "HospitalManagement.DataAccess\\Repositories\\ExpensesRepositories.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:15:55.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "INurseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\INurseRepository.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Core\\Repositories\\INurseRepository.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\INurseRepository.cs",
-              "RelativeToolTip": "HospitalManagement.Core\\Repositories\\INurseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T12:44:27.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IExpensesRepsitories.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\IExpensesRepsitories.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Core\\Repositories\\IExpensesRepsitories.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\IExpensesRepsitories.cs",
-              "RelativeToolTip": "HospitalManagement.Core\\Repositories\\IExpensesRepsitories.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:13:17.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PatientController.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\PatientController.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\PatientController.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\PatientController.cs",
-              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\PatientController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAQwLgAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T19:12:56.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PatientAuthController.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\PatientAuthController.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\PatientAuthController.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\PatientAuthController.cs",
-              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\PatientAuthController.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAUwA4AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T12:24:20.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "NurseController.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\NurseController.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\NurseController.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\NurseController.cs",
-              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\NurseController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAA5wB4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T12:43:25.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ExpenseController.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\ExpenseController.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\ExpenseController.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\ExpenseController.cs",
-              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\ExpenseController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAgwDQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:20:33.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DepartmentController.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\DepartmentController.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\DepartmentController.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\DepartmentController.cs",
-              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\DepartmentController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwC4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T09:14:55.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IDepartmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\IDepartmentRepository.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Core\\Repositories\\IDepartmentRepository.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\IDepartmentRepository.cs",
-              "RelativeToolTip": "HospitalManagement.Core\\Repositories\\IDepartmentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:13:21.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AllController.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\AllController.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\AllController.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\AllController.cs",
-              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\AllController.cs",
+              "DocumentIndex": 7,
+              "Title": "SanitaryController.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\SanitaryController.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\SanitaryController.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\SanitaryController.cs",
+              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\SanitaryController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T15:52:33.58Z",
+              "WhenOpened": "2025-02-20T16:58:09.084Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ProcessBlocker.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\Helper\\ProcessBlocker.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.BL\\Helper\\ProcessBlocker.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\Helper\\ProcessBlocker.cs",
-              "RelativeToolTip": "HospitalManagement.BL\\Helper\\ProcessBlocker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "SanitaryConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\SanitaryConfiguration.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Configuration\\SanitaryConfiguration.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\SanitaryConfiguration.cs",
+              "RelativeToolTip": "HospitalManagement.DataAccess\\Configuration\\SanitaryConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T19:12:16.638Z"
+              "WhenOpened": "2025-02-20T16:41:43.069Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "PatientAccount.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\PatientAccount.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Core\\Entities\\PatientAccount.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\PatientAccount.cs",
-              "RelativeToolTip": "HospitalManagement.Core\\Entities\\PatientAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Core\\Entities\\Department.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Department.cs",
+              "RelativeToolTip": "HospitalManagement.Core\\Entities\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T12:29:29.366Z"
+              "WhenOpened": "2025-02-20T16:45:58.429Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Patient.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Core\\Entities\\Patient.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Patient.cs",
-              "RelativeToolTip": "HospitalManagement.Core\\Entities\\Patient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T15:56:15.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ScreenshotBlocker.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\Helper\\ScreenshotBlocker.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.BL\\Helper\\ScreenshotBlocker.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\Helper\\ScreenshotBlocker.cs",
-              "RelativeToolTip": "HospitalManagement.BL\\Helper\\ScreenshotBlocker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T19:08:35.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "20250215160611_o.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Migrations\\20250215160611_o.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Migrations\\20250215160611_o.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Migrations\\20250215160611_o.cs",
-              "RelativeToolTip": "HospitalManagement.DataAccess\\Migrations\\20250215160611_o.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T16:06:11.853Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Program.cs",
               "RelativeDocumentMoniker": "HospitalManagement.Api\\Program.cs",
               "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Program.cs",
               "RelativeToolTip": "HospitalManagement.Api\\Program.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAQwJMAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAArwEoAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T16:09:42.744Z"
+              "WhenOpened": "2025-02-20T16:55:33.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250221102445_therapist.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Migrations\\20250221102445_therapist.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Migrations\\20250221102445_therapist.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Migrations\\20250221102445_therapist.cs",
+              "RelativeToolTip": "HospitalManagement.DataAccess\\Migrations\\20250221102445_therapist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T10:24:45.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SanitaryCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\DTO\\Sanitary\\SanitaryCreateDTO.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.BL\\DTO\\Sanitary\\SanitaryCreateDTO.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\DTO\\Sanitary\\SanitaryCreateDTO.cs",
+              "RelativeToolTip": "HospitalManagement.BL\\DTO\\Sanitary\\SanitaryCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T18:20:43.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SanitaryUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\DTO\\Sanitary\\SanitaryUpdateDTO.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.BL\\DTO\\Sanitary\\SanitaryUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\DTO\\Sanitary\\SanitaryUpdateDTO.cs",
+              "RelativeToolTip": "HospitalManagement.BL\\DTO\\Sanitary\\SanitaryUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T09:08:28.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TherapistRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\TherapistRepository.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Repositories\\TherapistRepository.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\TherapistRepository.cs",
+              "RelativeToolTip": "HospitalManagement.DataAccess\\Repositories\\TherapistRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T10:08:15.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TherapistController.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\TherapistController.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\TherapistController.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\TherapistController.cs",
+              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\TherapistController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T10:07:51.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ISanitaryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\ISanitaryRepository.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Core\\Repositories\\ISanitaryRepository.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\ISanitaryRepository.cs",
+              "RelativeToolTip": "HospitalManagement.Core\\Repositories\\ISanitaryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T16:35:52.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ITherapistRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\ITherapistRepository.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Core\\Repositories\\ITherapistRepository.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\ITherapistRepository.cs",
+              "RelativeToolTip": "HospitalManagement.Core\\Repositories\\ITherapistRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T10:08:41.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Therapist.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Therapist.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Core\\Entities\\Therapist.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Therapist.cs",
+              "RelativeToolTip": "HospitalManagement.Core\\Entities\\Therapist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T10:10:20.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Sanitary.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Sanitary.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Core\\Entities\\Sanitary.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Sanitary.cs",
+              "RelativeToolTip": "HospitalManagement.Core\\Entities\\Sanitary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T16:36:11.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SanitaryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\SanitaryRepository.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Repositories\\SanitaryRepository.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\SanitaryRepository.cs",
+              "RelativeToolTip": "HospitalManagement.DataAccess\\Repositories\\SanitaryRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAAmAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T16:25:23.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "HospitalManagement.DataAccess\\Context\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T16:39:49.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NurseController.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\NurseController.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\NurseController.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\NurseController.cs",
+              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\NurseController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T16:50:23.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Repositories\\PatientRepository.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\PatientRepository.cs",
+              "RelativeToolTip": "HospitalManagement.DataAccess\\Repositories\\PatientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAACQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T18:39:34.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PatientAuthController.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\PatientAuthController.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\PatientAuthController.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\PatientAuthController.cs",
+              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\PatientAuthController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T18:05:49.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\PatientController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwGIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T18:05:36.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAKUAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T18:25:43.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NurseCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\DTO\\Nurse\\NurseCreateDTO.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.BL\\DTO\\Nurse\\NurseCreateDTO.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\DTO\\Nurse\\NurseCreateDTO.cs",
+              "RelativeToolTip": "HospitalManagement.BL\\DTO\\Nurse\\NurseCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T18:21:16.615Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
+              "Title": "NurseConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\NurseConfiguration.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Configuration\\NurseConfiguration.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\NurseConfiguration.cs",
+              "RelativeToolTip": "HospitalManagement.DataAccess\\Configuration\\NurseConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAACKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T16:41:55.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DoctorConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\DoctorConfiguration.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Configuration\\DoctorConfiguration.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\DoctorConfiguration.cs",
+              "RelativeToolTip": "HospitalManagement.DataAccess\\Configuration\\DoctorConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T16:44:32.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ExpenseController.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\ExpenseController.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\ExpenseController.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\ExpenseController.cs",
+              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\ExpenseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T18:05:23.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Api\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Api\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "HospitalManagement.Api\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T17:22:42.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "NurseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\NurseRepository.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Repositories\\NurseRepository.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Repositories\\NurseRepository.cs",
+              "RelativeToolTip": "HospitalManagement.DataAccess\\Repositories\\NurseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T16:38:34.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DoctorPatientConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\DoctorPatientConfiguration.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Configuration\\DoctorPatientConfiguration.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\DoctorPatientConfiguration.cs",
+              "RelativeToolTip": "HospitalManagement.DataAccess\\Configuration\\DoctorPatientConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T16:44:37.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Nurse.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Nurse.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Core\\Entities\\Nurse.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Nurse.cs",
+              "RelativeToolTip": "HospitalManagement.Core\\Entities\\Nurse.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T16:36:29.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "ExpenseConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\ExpenseConfiguration.cs",
               "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Configuration\\ExpenseConfiguration.cs",
               "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\ExpenseConfiguration.cs",
               "RelativeToolTip": "HospitalManagement.DataAccess\\Configuration\\ExpenseConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:29:12.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Expense.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Expense.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Core\\Entities\\Expense.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Expense.cs",
-              "RelativeToolTip": "HospitalManagement.Core\\Entities\\Expense.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:14:17.538Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ExpenseCreateValidator.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\Validator\\Expense\\ExpenseCreateValidator.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.BL\\Validator\\Expense\\ExpenseCreateValidator.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\Validator\\Expense\\ExpenseCreateValidator.cs",
-              "RelativeToolTip": "HospitalManagement.BL\\Validator\\Expense\\ExpenseCreateValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:26:17.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ExpenceUpdateValidator.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\Validator\\Expense\\ExpenceUpdateValidator.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.BL\\Validator\\Expense\\ExpenceUpdateValidator.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\Validator\\Expense\\ExpenceUpdateValidator.cs",
-              "RelativeToolTip": "HospitalManagement.BL\\Validator\\Expense\\ExpenceUpdateValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:26:30.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "DepartmentCreateValidator.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\Validator\\Department\\DepartmentCreateValidator.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.BL\\Validator\\Department\\DepartmentCreateValidator.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.BL\\Validator\\Department\\DepartmentCreateValidator.cs",
-              "RelativeToolTip": "HospitalManagement.BL\\Validator\\Department\\DepartmentCreateValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:26:40.189Z"
+              "WhenOpened": "2025-02-20T16:44:41.336Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "DepartmentConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\DepartmentConfiguration.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.DataAccess\\Configuration\\DepartmentConfiguration.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.DataAccess\\Configuration\\DepartmentConfiguration.cs",
-              "RelativeToolTip": "HospitalManagement.DataAccess\\Configuration\\DepartmentConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 33,
+              "Title": "INurseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\INurseRepository.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Core\\Repositories\\INurseRepository.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\INurseRepository.cs",
+              "RelativeToolTip": "HospitalManagement.Core\\Repositories\\INurseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:29:18.812Z"
+              "WhenOpened": "2025-02-20T16:37:41.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Common\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Core\\Entities\\Common\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Entities\\Common\\BaseEntity.cs",
-              "RelativeToolTip": "HospitalManagement.Core\\Entities\\Common\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 34,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Core\\Repositories\\IDepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\kanan\\source\\repos\\HospitalManagement\\HospitalManagement.Core\\Repositories\\IDepartmentRepository.cs",
+              "RelativeToolTip": "HospitalManagement.Core\\Repositories\\IDepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T14:25:50.436Z"
+              "WhenOpened": "2025-02-20T16:37:31.345Z"
             }
           ]
         }

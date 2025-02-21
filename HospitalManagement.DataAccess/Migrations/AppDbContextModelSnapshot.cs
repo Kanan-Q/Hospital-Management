@@ -226,6 +226,10 @@ namespace HospitalManagement.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("int");
 
+                    b.Property<string>("Education")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
@@ -386,6 +390,158 @@ namespace HospitalManagement.DataAccess.Migrations
                     b.ToTable("Prescriptions");
                 });
 
+            modelBuilder.Entity("HospitalManagement.Core.Entities.Sanitary", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasComment("Max 50 symbols can use");
+
+                    b.Property<int?>("Age")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<byte>("Count")
+                        .HasColumnType("tinyint");
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("DepartmentId")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Education")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("FIN")
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)")
+                        .HasComment("Max 8 symbol");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasComment("You can use 20 symbol");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("Salary")
+                        .IsRequired()
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Series")
+                        .HasMaxLength(9)
+                        .HasColumnType("nvarchar(9)")
+                        .HasComment("Max 9 symbol");
+
+                    b.Property<string>("Surname")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasComment("You can use 20 symbol");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DepartmentId");
+
+                    b.HasIndex("Id")
+                        .IsUnique();
+
+                    b.ToTable("Sanitaries");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.Therapist", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasComment("Max 50 symbols can use");
+
+                    b.Property<int?>("Age")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<byte>("Count")
+                        .HasColumnType("tinyint");
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("DepartmentId")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Education")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("FIN")
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)")
+                        .HasComment("Max 8 symbol");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasComment("You can use 20 symbol");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("Salary")
+                        .IsRequired()
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Series")
+                        .HasMaxLength(9)
+                        .HasColumnType("nvarchar(9)")
+                        .HasComment("Max 9 symbol");
+
+                    b.Property<string>("Surname")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasComment("You can use 20 symbol");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DepartmentId");
+
+                    b.HasIndex("Id")
+                        .IsUnique();
+
+                    b.ToTable("Therapists");
+                });
+
             modelBuilder.Entity("HospitalManagement.Core.Entities.Doctor", b =>
                 {
                     b.HasOne("HospitalManagement.Core.Entities.Department", "Department")
@@ -445,11 +601,37 @@ namespace HospitalManagement.DataAccess.Migrations
                     b.Navigation("Patient");
                 });
 
+            modelBuilder.Entity("HospitalManagement.Core.Entities.Sanitary", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.Department", "Department")
+                        .WithMany("Sanitaries")
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Department");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.Therapist", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.Department", "Department")
+                        .WithMany("Therapists")
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Department");
+                });
+
             modelBuilder.Entity("HospitalManagement.Core.Entities.Department", b =>
                 {
                     b.Navigation("Doctors");
 
                     b.Navigation("Nurses");
+
+                    b.Navigation("Sanitaries");
+
+                    b.Navigation("Therapists");
                 });
 
             modelBuilder.Entity("HospitalManagement.Core.Entities.Doctor", b =>

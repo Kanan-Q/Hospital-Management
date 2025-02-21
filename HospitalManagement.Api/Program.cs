@@ -71,14 +71,14 @@ namespace HospitalManagement.Api
             builder.Services.AddScoped<IDoctorRepository, DoctorRepository>();
             builder.Services.AddScoped<IPatientAccountRepository, PatientAccountRepository>();
             builder.Services.AddScoped<IExpensesRepsitories, ExpensesRepositories>();
+            builder.Services.AddScoped<ISanitaryRepository, SanitaryRepository>();
+            builder.Services.AddScoped<ITherapistRepository, TherapistRepository>();
             builder.Services.AddScoped<PatientJwtHelper>();
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowAnyOrigin", policy =>
                 {
-                    policy.AllowAnyOrigin()  // Allow any origin
-                          .AllowAnyHeader()  // Allow any header
-                          .AllowAnyMethod();  // Allow any method
+                    policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod(); 
                 });
             });
             //builder.Services.AddSingleton<IpWhitelistMiddleware>();

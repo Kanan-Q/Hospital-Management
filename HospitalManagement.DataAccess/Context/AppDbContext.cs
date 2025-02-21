@@ -21,6 +21,8 @@ namespace HospitalManagement.DataAccess.Context
         public DbSet<Prescription> Prescriptions { get; set; }
         public DbSet<Expense> Expenses { get; set; }
         public DbSet<PatientAccount> PatientAccounts { get; set; }
+        public DbSet<Sanitary> Sanitaries { get; set; }
+        public DbSet<Therapist> Therapists { get; set; }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

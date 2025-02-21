@@ -18,26 +18,6 @@ namespace HospitalManagement.Api.Controllers
     [ApiController]
     public class PatientController(IPatientRepository _repo, AppDbContext _sql, IPatientAccountRepository _r) : ControllerBase
     {
-        //[HttpGet]
-        //public async Task<IActionResult> GetAll()
-        //{
-
-        //    var patients = await _repo.GetAllAsync();
-        //    var dto = patients.Select(x => new
-        //    {
-        //        x.Id,
-        //        x.Name,
-        //        x.Surname,
-        //        x.Age,
-        //        x.Email,
-        //        x.FIN,
-        //        x.Series,
-        //        x.Address,
-        //        Doctors = x.DoctorPatients.Select(y => new { y.Doctor.Name, y.Doctor.Id}).ToList()
-
-        //    }).ToList();
-        //    return Ok(dto);
-        //}
         [HttpGet]
         public async Task<IActionResult> AllPatients()
         {
@@ -174,17 +154,17 @@ namespace HospitalManagement.Api.Controllers
         {
             var user = HttpContext.User;
 
-            var fullName = user.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
+            var Name = user.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
             var finCode = user.Claims.FirstOrDefault(c => c.Type == "FinCode")?.Value;
 
-            if (finCode == null || fullName == null)
+            if (finCode == null || Name == null)
             {
                 return Unauthorized("Invalid token");
             }
 
             var patient = await _repo.GetByFinCodeAsync(finCode);
 
-            if (patient == null || patient.Name != fullName)
+            if (patient == null || patient.Name != Name)
             {
                 return NotFound("Patient not found or data mismatch");
             }
@@ -198,14 +178,12 @@ namespace HospitalManagement.Api.Controllers
                 Email = patient.Email,
                 Series = patient.Series,
                 Age = patient.Age,
-                receipt = patient.Prescriptions.Select(r => new
+                receipt = patient.Prescriptions.Select(x => new
                 {
-                    DoctorName = r.Doctor.Name,
-                    Medication = r.MedicationName
+                    DoctorName = x.Doctor.Name,
+                    Medication = x.MedicationName
                 })
                 .ToList(),
-
-
             });
         }
     }

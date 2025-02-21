@@ -13,29 +13,9 @@ namespace HospitalManagement.Api.Controllers
     public class NurseController(INurseRepository _repo) : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetAll()
-        {
-            var nurse = await _repo.GetAllAsync();
-            var dto = nurse.Select(x => new
-            {
-                x.Id,
-                x.Name,
-                x.Surname,
-                x.Age,
-                x.Email,
-                x.CreatedTime,
-                x.FIN,
-                x.Salary,
-                x.Series,
-                x.Address,
-                x.IsDeleted,
-                DepartmentName = x.Department.DepartmentName
-            }).ToList();
-
-            return Ok(nurse);
-        }
+        public async Task<IActionResult> GetAll() => Ok(await _repo.GetAllAsync());
         [HttpGet]
-        public async Task<IActionResult> Search([FromQuery] string query) => Ok(await _repo.SearchAsync(query));
+        public async Task<IActionResult> Search(string query) => Ok(await _repo.SearchAsync(query));
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id) => Ok(await _repo.GetByIdAsync(id));
