@@ -1,4 +1,5 @@
 ﻿using HospitalManagement.Core.Entities;
+using HospitalManagement.Core.Enum;
 using HospitalManagement.Core.Repositories;
 using HospitalManagement.DataAccess.Context;
 using Microsoft.EntityFrameworkCore;
@@ -36,8 +37,12 @@ namespace HospitalManagement.DataAccess.Repositories
             data.Series = sanitary.Series;
             data.Address = sanitary.Address;
             data.DepartmentId = sanitary.DepartmentId;
+            data.Gender = sanitary.Gender;
+            data.Birthday = sanitary.Birthday;
             await _sql.SaveChangesAsync();
         }
+        public async Task<ICollection<Sanitary>> GetSanitariesByGenderAsync(int gender) => await _sql.Sanitaries.Where(x => x.Gender == (Gender)gender).ToListAsync();
+        public async Task<ICollection<Sanitary>> GetSanitariesByDepartmentAsync(string department) => await _sql.Sanitaries .Where(x => x.Department.DepartmentName == department).ToListAsync();
         public async Task<IEnumerable<Sanitary>> GetAllAsync() => await _sql.Sanitaries.Include(x => x.Department).AsNoTracking().ToListAsync();
         public async Task<Sanitary?> GetByIdAsync(int id) => await _sql.Sanitaries.Include(x => x.Department).Where(x => x.Id == id).FirstOrDefaultAsync();
         public async Task<IEnumerable<Sanitary>> SearchAsync(string query) => await _sql.Sanitaries.Where(p => p.Name.Contains(query) || p.Surname.Contains(query) || p.Email.Contains(query) || p.FIN.Contains(query) || p.Series.Contains(query) || p.Age.ToString().Contains(query)).ToListAsync();

@@ -1,4 +1,5 @@
 ﻿using HospitalManagement.Core.Entities.Common;
+using HospitalManagement.Core.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,5 @@ namespace HospitalManagement.Core.Entities
         public ICollection<DoctorPatient> DoctorPatients { get; set; }
         //[JsonIgnore]
         public ICollection<Prescription> Prescriptions { get; set; }
-
     }
 }

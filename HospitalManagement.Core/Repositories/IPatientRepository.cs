@@ -14,7 +14,8 @@ namespace HospitalManagement.Core.Repositories
         Task UpdateAsync(Patient patient);
         Task DeleteAsync(Patient patient);
         Task <Patient> GetByIdAsync(int id);
-        Task <Patient?> GetByFinCodeAsync(string finCode);
+        Task<Patient?> GetByIdForDoctorAsync(int id, ClaimsPrincipal user);
+        Task<Patient?> GetByFinCodeAsync(string finCode);
         Task<IEnumerable<Patient>> AllAsync(ClaimsPrincipal user);
         Task<IEnumerable<Patient>> SearchAsync(string query,ClaimsPrincipal user);
 

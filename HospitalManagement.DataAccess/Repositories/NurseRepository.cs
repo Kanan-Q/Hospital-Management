@@ -1,4 +1,5 @@
 ﻿using HospitalManagement.Core.Entities;
+using HospitalManagement.Core.Enum;
 using HospitalManagement.Core.Repositories;
 using HospitalManagement.DataAccess.Context;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -32,11 +33,17 @@ namespace HospitalManagement.DataAccess.Repositories
             data.Age = nurse.Age;
             data.Email = nurse.Email;
             data.FIN = nurse.FIN;
+            data.Education = nurse.Education;
+            data.Salary = nurse.Salary;
             data.Series = nurse.Series;
             data.Address = nurse.Address;
             data.DepartmentId = nurse.DepartmentId;
+            data.Gender = nurse.Gender;
+            data.Birthday = nurse.Birthday;
             await _sql.SaveChangesAsync();
         }
+        public async Task<ICollection<Nurse>> GetNursesByGenderAsync(int gender) => await _sql.Nurses.Where(x => x.Gender == (Gender)gender).ToListAsync();
+        public async Task<ICollection<Nurse>> GetNursesByDepartmentAsync(string department) => await _sql.Nurses.Where(x => x.Department.DepartmentName == department).ToListAsync();
         public async Task<IEnumerable<Nurse>> GetAllAsync() => await _sql.Nurses.Include(x => x.Department).AsNoTracking().ToListAsync();
         public async Task<Nurse?> GetByIdAsync(int id) => await _sql.Nurses.Include(x => x.Department).Where(x => x.Id == id).FirstOrDefaultAsync();
         public async Task<IEnumerable<Nurse>> SearchAsync(string query) => await _sql.Nurses.Where(p => p.Name.Contains(query) || p.Surname.Contains(query) || p.Email.Contains(query) || p.FIN.Contains(query) || p.Series.Contains(query) || p.Age.ToString().Contains(query)).ToListAsync();

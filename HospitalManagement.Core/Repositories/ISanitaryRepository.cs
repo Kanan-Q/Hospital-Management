@@ -15,5 +15,7 @@ namespace HospitalManagement.Core.Repositories
         Task<IEnumerable<Sanitary>> GetAllAsync();
         Task<Sanitary?> GetByIdAsync(int id);
         Task<IEnumerable<Sanitary>> SearchAsync(string query);
+        Task<ICollection<Sanitary>> GetSanitariesByDepartmentAsync(string department);
+        Task<ICollection<Sanitary>> GetSanitariesByGenderAsync(int gender);
     }
 }

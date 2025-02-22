@@ -20,5 +20,7 @@ namespace HospitalManagement.BL.DTO.Sanitary
         public string Address { get; set; }
         public byte Count { get; set; } = 1;
         public int DepartmentId { get; set; }
+        public int Gender { get; set; }
+        public DateOnly Birthday { get; set; }
     }
 }

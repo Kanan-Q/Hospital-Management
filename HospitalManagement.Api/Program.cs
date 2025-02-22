@@ -73,6 +73,8 @@ namespace HospitalManagement.Api
             builder.Services.AddScoped<IExpensesRepsitories, ExpensesRepositories>();
             builder.Services.AddScoped<ISanitaryRepository, SanitaryRepository>();
             builder.Services.AddScoped<ITherapistRepository, TherapistRepository>();
+            builder.Services.AddScoped<IEquipmentRepository, EquipmentRepository>();
+            builder.Services.AddScoped<IDiagnosticRepository, DiagnosticRepository>();
             builder.Services.AddScoped<PatientJwtHelper>();
             builder.Services.AddCors(options =>
             {

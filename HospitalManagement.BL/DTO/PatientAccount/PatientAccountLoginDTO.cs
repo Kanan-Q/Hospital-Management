@@ -8,7 +8,7 @@ namespace HospitalManagement.BL.DTO.PatientAccount
 {
     public class PatientAccountLoginDTO
     {
-        public string Name { get; set; }
+        //public string Name { get; set; }
         public string Password { get; set; }
         public string FIN { get; set; }
     }

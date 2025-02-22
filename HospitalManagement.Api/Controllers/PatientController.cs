@@ -98,6 +98,26 @@ namespace HospitalManagement.Api.Controllers
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id) => Ok(await _repo.GetByIdAsync(id));
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetPatientByIdForDoctor(int id)
+        {
+            var userEmail = User.FindFirst(ClaimTypes.Name)?.Value;
+
+            if (string.IsNullOrEmpty(userEmail))
+            {
+                return Unauthorized("İstifadəçi məlumatı tapılmadı.");
+            }
+
+            var patient = await _repo.GetByIdForDoctorAsync(id, User);
+            if (patient == null)
+            {
+                return NotFound("Xəstə tapılmadı.");
+            }
+
+            return Ok(patient);
+        }
+
         [HttpPost]
         public async Task<IActionResult> CreatePrescription([FromBody] PrescriptionCreateDTO dto)
         {
@@ -186,6 +206,10 @@ namespace HospitalManagement.Api.Controllers
                 .ToList(),
             });
         }
+        //[HttpGet]
+        //public async Task<IActionResult> GetPatientByGender(int gender) => Ok(await _repo.GetPatientsByGenderAsync(gender));
+        //[HttpGet]
+        //public async Task<IActionResult> GetPatientByDepartment(string department) => Ok(await _repo.GetPatientsByDepartmentAsync(department));
     }
 }
 

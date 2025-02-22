@@ -43,6 +43,38 @@
   },
   {
     "ContainingType": "HospitalManagement.Api.Controllers.AuthController",
+    "Method": "GetDoctorsByDepartment",
+    "RelativePath": "api/Auth/GetDoctorsByDepartment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.AuthController",
+    "Method": "GetDoctorsByGender",
+    "RelativePath": "api/Auth/GetDoctorsByGender",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/Login",
     "HttpMethod": "POST",
@@ -226,6 +258,260 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "HospitalManagement.Api.Controllers.DiagnosticController",
+    "Method": "Create",
+    "RelativePath": "api/Diagnostic/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.Diagnostic.DiagnosticCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.DiagnosticController",
+    "Method": "Delete",
+    "RelativePath": "api/Diagnostic/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.DiagnosticController",
+    "Method": "GetAll",
+    "RelativePath": "api/Diagnostic/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.DiagnosticController",
+    "Method": "GetById",
+    "RelativePath": "api/Diagnostic/GetById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.DiagnosticController",
+    "Method": "GetDiagnosticByDepartment",
+    "RelativePath": "api/Diagnostic/GetDiagnosticByDepartment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.DiagnosticController",
+    "Method": "GetDiagnosticByGender",
+    "RelativePath": "api/Diagnostic/GetDiagnosticByGender",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.DiagnosticController",
+    "Method": "Search",
+    "RelativePath": "api/Diagnostic/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.DiagnosticController",
+    "Method": "Update",
+    "RelativePath": "api/Diagnostic/Update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.Diagnostic.DiagnosticUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.EquipmentController",
+    "Method": "Create",
+    "RelativePath": "api/Equipment/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.Equipment.EquipmentCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.EquipmentController",
+    "Method": "Delete",
+    "RelativePath": "api/Equipment/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.EquipmentController",
+    "Method": "GetAll",
+    "RelativePath": "api/Equipment/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.EquipmentController",
+    "Method": "GetById",
+    "RelativePath": "api/Equipment/GetById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.EquipmentController",
+    "Method": "GetEquipmentByDepartment",
+    "RelativePath": "api/Equipment/GetEquipmentByDepartment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.EquipmentController",
+    "Method": "GetEquipmentByGender",
+    "RelativePath": "api/Equipment/GetEquipmentByGender",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.EquipmentController",
+    "Method": "Search",
+    "RelativePath": "api/Equipment/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.EquipmentController",
+    "Method": "Update",
+    "RelativePath": "api/Equipment/Update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.Equipment.EquipmentUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
     "Method": "Create",
     "RelativePath": "api/Expense/Create",
@@ -380,6 +666,38 @@
   },
   {
     "ContainingType": "HospitalManagement.Api.Controllers.NurseController",
+    "Method": "GetNurseByDepartment",
+    "RelativePath": "api/Nurse/GetNurseByDepartment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.NurseController",
+    "Method": "GetNurseByGender",
+    "RelativePath": "api/Nurse/GetNurseByGender",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.NurseController",
     "Method": "Search",
     "RelativePath": "api/Nurse/Search",
     "HttpMethod": "GET",
@@ -477,6 +795,22 @@
     "ContainingType": "HospitalManagement.Api.Controllers.PatientController",
     "Method": "GetById",
     "RelativePath": "api/Patient/GetById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.PatientController",
+    "Method": "GetPatientByIdForDoctor",
+    "RelativePath": "api/Patient/GetPatientByIdForDoctor/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -675,6 +1009,38 @@
   },
   {
     "ContainingType": "HospitalManagement.Api.Controllers.SanitaryController",
+    "Method": "GetSanitaryByDepartment",
+    "RelativePath": "api/Sanitary/GetSanitaryByDepartment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.SanitaryController",
+    "Method": "GetSanitaryByGender",
+    "RelativePath": "api/Sanitary/GetSanitaryByGender",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.SanitaryController",
     "Method": "Search",
     "RelativePath": "api/Sanitary/Search",
     "HttpMethod": "GET",
@@ -764,6 +1130,38 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.TherapistController",
+    "Method": "GetTherapistByDepartment",
+    "RelativePath": "api/Therapist/GetTherapistByDepartment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.TherapistController",
+    "Method": "GetTherapistByGender",
+    "RelativePath": "api/Therapist/GetTherapistByGender",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

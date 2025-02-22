@@ -15,6 +15,8 @@ namespace HospitalManagement.Core.Repositories
         Task DeleteAsync(Doctor doctor);
         Task<Doctor?> GetByIdAsync(int id);
         Task<IEnumerable<Doctor>> SearchAsync(string query);
+        Task<ICollection<Doctor>> GetDoctorsByGenderAsync(int gender);
+        Task<ICollection<Doctor>> GetDoctorsByDepartmentAsync(string department);
 
     }
 }

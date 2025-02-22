@@ -40,7 +40,7 @@ namespace HospitalManagement.Api.Controllers
             if (account == null || !VerifyPassword(dto.Password, account.PasswordHash))
                 return Unauthorized("Invalid credentials");
 
-            var token = _jwtHelper.GenerateToken(account.Name, account.FinCode);
+            var token = _jwtHelper.GenerateToken(account.FinCode);
             return Ok(new { Token = token });
         }
 
@@ -49,17 +49,17 @@ namespace HospitalManagement.Api.Controllers
         {
             var user = HttpContext.User;
 
-            var Name = user.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
+            //var Name = user.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
             var finCode = user.Claims.FirstOrDefault(c => c.Type == "FinCode")?.Value;
 
-            if (finCode == null || Name == null)
+            if (finCode == null)
             {
                 return Unauthorized("Invalid token");
             }
 
             var patient = await _repo.GetByFinCodeAsync(finCode);
 
-            if (patient == null || patient.Name != Name)
+            if (patient == null)
             {
                 return NotFound("Patient not found or data mismatch");
             }
@@ -86,6 +86,7 @@ namespace HospitalManagement.Api.Controllers
             };
             return Ok(patientInfo);
         }
+
 
         [HttpGet]
         public async Task<IActionResult> Search(string query) => Ok(await _patientAccountRepo.SearchAsync(query));

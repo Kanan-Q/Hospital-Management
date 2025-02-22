@@ -1,8 +1,10 @@
 ﻿using HospitalManagement.BL.DTO.Doctor;
 using HospitalManagement.BL.SignalR;
 using HospitalManagement.Core.Entities;
+using HospitalManagement.Core.Enum;
 using HospitalManagement.Core.Repositories;
 using HospitalManagement.DataAccess.Context;
+using HospitalManagement.DataAccess.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -66,6 +68,10 @@ namespace HospitalManagement.Api.Controllers
             {
                 return BadRequest(new { message = "Email or Name already in use." });
             }
+            //if (!Enum.TryParse(model.Gender, true, out Gender gender))
+            //{
+            //    return BadRequest("Invalid gender. Please use 'Male' or 'Female'.");
+            //}
 
             Doctor doctor = new Doctor
             {
@@ -76,9 +82,12 @@ namespace HospitalManagement.Api.Controllers
                 FIN = model.FIN,
                 Series = model.Series,
                 Address = model.Address,
+                Education = model.Education,
                 DepartmentId = model.DepartmentId,
                 PasswordHash = HashPassword(model.Password),
                 Salary = model.Salary,
+                Gender = (Gender)model.Gender,
+                Birthday = model.Birthday,
                 Phone = model.Phone,
             };
 
@@ -135,14 +144,14 @@ namespace HospitalManagement.Api.Controllers
                 return Unauthorized(new { message = "User not authenticated." });
             }
 
-            var doctor = await _sql.Doctors.Include(x=>x.Department).FirstOrDefaultAsync(d => d.Email == userEmail);
+            var doctor = await _sql.Doctors.Include(x => x.Department).FirstOrDefaultAsync(d => d.Email == userEmail);
 
             if (doctor == null)
             {
                 return NotFound(new { message = "Doctor not found." });
             }
 
-            return Ok(new { doctor.Id, doctor.Name, doctor.Surname,doctor.Age,doctor.Phone, doctor.Salary, doctor.Email,doctor.FIN,doctor.Series, doctor.Address,doctor.Department.DepartmentName,doctor.CreatedTime });
+            return Ok(new { doctor.Id, doctor.Name, doctor.Surname, doctor.Age, doctor.Phone, doctor.Salary, doctor.Email, doctor.FIN, doctor.Series, doctor.Address, doctor.Department.DepartmentName, doctor.CreatedTime });
         }
         [Authorize(Roles = "Admin")]
         [HttpGet]
@@ -163,8 +172,8 @@ namespace HospitalManagement.Api.Controllers
         }
         [Authorize(Roles = "Admin")]
         [HttpGet]
-        public async Task<IActionResult> GetAll()=>Ok(await _repo.GetAllAsync());
-        
+        public async Task<IActionResult> GetAll() => Ok(await _repo.GetAllAsync());
+
         [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
@@ -183,14 +192,20 @@ namespace HospitalManagement.Api.Controllers
             doctor.Surname = dto.Surname;
             doctor.Age = dto.Age;
             doctor.Salary = dto.Salary;
+            doctor.Education = dto.Education;
             doctor.FIN = dto.FIN;
             doctor.Series = dto.Series;
             doctor.Address = dto.Address;
             doctor.DepartmentId = dto.DepartmentId;
+            doctor.Gender = (Gender)dto.Gender;
+            doctor.Birthday = dto.Birthday;
             await _repo.UpdateAsync(doctor);
             return Ok();
         }
-
+        [HttpGet]
+        public async Task<IActionResult> GetDoctorsByGender(int gender) => Ok(await _repo.GetDoctorsByGenderAsync(gender));
+        [HttpGet]
+        public async Task<IActionResult> GetDoctorsByDepartment(string department) => Ok(await _repo.GetDoctorsByDepartmentAsync(department));
     }
 }
 

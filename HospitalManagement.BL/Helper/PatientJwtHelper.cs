@@ -20,7 +20,7 @@ namespace HospitalManagement.BL.Helper
             _config = config;
         }
 
-        public string GenerateToken(string name,string finCode)
+        public string GenerateToken(string finCode)
         {
             var secretKey = _config["Jwt:Key"];
             var issuer = _config["Jwt:Issuer"];
@@ -28,7 +28,7 @@ namespace HospitalManagement.BL.Helper
 
             var claims = new List<Claim>
         {
-            new Claim(ClaimTypes.Name, name),
+            //new Claim(ClaimTypes.Name, name),
             new Claim("FinCode",finCode),
         };
 

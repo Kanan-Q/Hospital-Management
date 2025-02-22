@@ -15,9 +15,12 @@ namespace HospitalManagement.BL.DTO.Nurse
         public decimal Salary { get; set; }
         public string Email { get; set; }
         public string FIN { get; set; }
+        public int Gender { get; set; }
+        public DateOnly Birthday { get; set; }
         public string Series { get; set; }
         public string Address { get; set; }
         public byte Count { get; set; } = 1;
         public int DepartmentId { get; set; }
+        public string Education { get; set; }
     }
 }

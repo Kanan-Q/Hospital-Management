@@ -1,4 +1,5 @@
 ﻿using HospitalManagement.Core.Entities;
+using HospitalManagement.Core.Enum;
 using HospitalManagement.Core.Repositories;
 using HospitalManagement.DataAccess.Context;
 using HospitalManagement.DataAccess.Migrations;
@@ -37,7 +38,43 @@ namespace HospitalManagement.DataAccess.Repositories
             data.Address = patient.Address;
             await _sql.SaveChangesAsync();
         }
+        //public async Task<ICollection<Patient>> GetPatientsByGenderAsync(int gender) => await _sql.Patients.Where(x => x.Gender == (Gender)gender).ToListAsync();
+        //public async Task<ICollection<Patient>> GetPatientsByDepartmentAsync(string department) => await _sql.Patients.Include(x => x.Department.DepartmentName == department).ToListAsync();
         public async Task<Patient?> GetByIdAsync(int id) => await _sql.Patients.Include(x => x.Prescriptions).ThenInclude(x=>x.Doctor.Department).Where(x => x.Id == id).FirstOrDefaultAsync();
+        public async Task<Patient?> GetByIdForDoctorAsync(int id, ClaimsPrincipal user)
+        {
+            var userEmail = user.FindFirst(ClaimTypes.Name)?.Value;
+
+            return await _sql.Patients.Include(x => x.Prescriptions)
+                .ThenInclude(x => x.Doctor.Department)
+                .Where(p => p.DoctorPatients.Any(dp => dp.Doctor.Email == userEmail))
+                .Select(p => new Patient
+                {
+                    Id = p.Id,
+                    Name = p.Name,
+                    Surname = p.Surname,
+                    Age = p.Age,
+                    Email = p.Email,
+                    Count = p.Count,
+                    CreatedTime = p.CreatedTime,
+                    FIN = p.FIN,
+                    Series = p.Series,
+                    Address = p.Address,
+                    DoctorPatients = p.DoctorPatients,
+                    Prescriptions = p.Prescriptions
+                        .Where(pr => pr.Doctor.Email == userEmail)
+                        .Select(pr => new Prescription
+                        {
+                            Id = pr.Id,
+                            MedicationName = pr.MedicationName,
+                            Doctor = pr.Doctor,
+                            CreatedTime = pr.CreatedTime
+                        })
+                        .ToList()
+                })
+                .FirstOrDefaultAsync(p => p.Id == id);
+        }
+
         public async Task<Patient?> GetByFinCodeAsync(string finCode) => await _sql.Patients.Include(x => x.Prescriptions).ThenInclude(p => p.Doctor.Department).Where(x => x.FIN == finCode).FirstOrDefaultAsync();
         public async Task<IEnumerable<Patient>> AllAsync(ClaimsPrincipal user)
         {

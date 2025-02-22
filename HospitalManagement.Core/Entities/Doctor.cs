@@ -1,12 +1,6 @@
 ﻿using HospitalManagement.Core.Entities.Common;
-using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using HospitalManagement.Core.Enum;
 using System.Text.Json.Serialization;
-using System.Threading.Tasks;
-
 namespace HospitalManagement.Core.Entities
 {
     public class Doctor:BaseEntity
@@ -22,6 +16,9 @@ namespace HospitalManagement.Core.Entities
         public string Series { get; set; }
         public string Address { get; set; }
         public byte Count { get; set; } = 1;
+        public string Education { get; set; }
+        public Gender Gender { get; set; }
+        public DateOnly Birthday { get; set; }
         public int? DepartmentId { get; set; }
         public Department? Department { get; set; }
         public bool IsActive { get; set; }=false;

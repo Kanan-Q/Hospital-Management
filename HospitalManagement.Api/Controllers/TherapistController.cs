@@ -1,7 +1,9 @@
 ﻿using HospitalManagement.BL.DTO.Sanitary;
 using HospitalManagement.BL.DTO.Therapist;
 using HospitalManagement.Core.Entities;
+using HospitalManagement.Core.Enum;
 using HospitalManagement.Core.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +11,7 @@ namespace HospitalManagement.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class TherapistController(ITherapistRepository _repo) : ControllerBase
     {
         [HttpGet]
@@ -35,6 +38,8 @@ namespace HospitalManagement.Api.Controllers
                 Education = dto.Education,
                 Phone = dto.Phone,
                 DepartmentId = dto.DepartmentId,
+                Gender = (Gender)dto.Gender,
+                Birthday = dto.Birthday,
             };
             await _repo.AddAsync(therapist);
             return Ok();
@@ -62,8 +67,14 @@ namespace HospitalManagement.Api.Controllers
             therapist.Education = dto.Education;
             therapist.Address = dto.Address;
             therapist.DepartmentId = dto.DepartmentId;
+            therapist.Gender = (Gender)dto.Gender;
+            therapist.Birthday = dto.Birthday;
             await _repo.UpdateAsync(therapist);
             return Ok();
         }
+        [HttpGet]
+        public async Task<IActionResult> GetTherapistByGender(int gender) => Ok(await _repo.GetTherapistsByGenderAsync(gender));
+        [HttpGet]
+        public async Task<IActionResult> GetTherapistByDepartment(string department) => Ok(await _repo.GetTherapistsByDepartmentAsync(department));
     }
 }

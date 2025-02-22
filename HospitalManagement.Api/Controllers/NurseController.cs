@@ -1,5 +1,6 @@
 ﻿using HospitalManagement.BL.DTO.Nurse;
 using HospitalManagement.Core.Entities;
+using HospitalManagement.Core.Enum;
 using HospitalManagement.Core.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -29,12 +30,15 @@ namespace HospitalManagement.Api.Controllers
                 Surname = dto.Surname,
                 Age = dto.Age,
                 Salary = dto.Salary,
+                Education = dto.Education,
                 Email = dto.Email,
                 FIN = dto.FIN,
                 Series = dto.Series,
                 Address = dto.Address,
                 Phone = dto.Phone,
                 DepartmentId = dto.DepartmentId,
+                Gender = (Gender)dto.Gender,
+                Birthday = dto.Birthday,
             };
             await _repo.AddAsync(nurse);
             return Ok();
@@ -57,11 +61,18 @@ namespace HospitalManagement.Api.Controllers
             nurse.Salary = dto.Salary;
             nurse.Email = dto.Email;
             nurse.FIN = dto.FIN;
+            nurse.Education = dto.Education;
             nurse.Series = dto.Series;
             nurse.Address = dto.Address;
             nurse.DepartmentId = dto.DepartmentId;
+            nurse.Gender = (Gender)dto.Gender;
+            nurse.Birthday = dto.Birthday;
             await _repo.UpdateAsync(nurse);
             return Ok();
         }
+        [HttpGet]
+        public async Task<IActionResult> GetNurseByGender(int gender) => Ok(await _repo.GetNursesByGenderAsync(gender));
+        [HttpGet]
+        public async Task<IActionResult> GetNurseByDepartment(string department) => Ok(await _repo.GetNursesByDepartmentAsync(department));
     }
 }
