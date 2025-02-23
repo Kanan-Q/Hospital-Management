@@ -18,7 +18,6 @@ namespace HospitalManagement.DataAccess.Context
         public DbSet<Nurse> Nurses { get; set; }
         public DbSet<Patient> Patients { get; set; }
         public DbSet<DoctorPatient> DoctorPatients { get; set; }
-        public DbSet<BlackListedToken> BlackListedTokens { get; set; }
         public DbSet<Prescription> Prescriptions { get; set; }
         public DbSet<Expense> Expenses { get; set; }
         public DbSet<PatientAccount> PatientAccounts { get; set; }

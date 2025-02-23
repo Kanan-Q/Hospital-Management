@@ -5,13 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HospitalManagement.Core.Entities;
+using HospitalManagement.Core.Entities.Common;
 
 namespace HospitalManagement.DataAccess.Configuration
 {
-    public class EquipmentConfiguration : IEntityTypeConfiguration<Equipment>
+    internal class DiagnosticConfiguration : IEntityTypeConfiguration<Diagnostic>
     {
-        public void Configure(EntityTypeBuilder<Equipment> builder)
+        public void Configure(EntityTypeBuilder<Diagnostic> builder)
         {
             builder.HasIndex(x => x.Id).IsUnique();
             builder.Property(x => x.Name).IsRequired(false).HasMaxLength(20).HasComment("You can use 20 symbol");
@@ -23,7 +23,7 @@ namespace HospitalManagement.DataAccess.Configuration
             builder.Property(x => x.Series).IsRequired(false).HasMaxLength(9).HasComment("Max 9 symbol");
             builder.Property(x => x.Address).IsRequired(false).HasMaxLength(50).HasComment("Max 50 symbols can use");
             builder.Property(x => x.DepartmentId).IsRequired();
-            builder.HasOne(x => x.Department).WithMany(x => x.Equipments).HasForeignKey(x => x.DepartmentId).OnDelete(DeleteBehavior.Cascade);
+            builder.HasOne(x => x.Department).WithMany(x => x.Diagnostics).HasForeignKey(x => x.DepartmentId).OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

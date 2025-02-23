@@ -29,16 +29,11 @@ namespace HospitalManagement.Api
             {
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("AzureSql"));
             });
-            //builder.Services.Configure<ForwardedHeadersOptions>(options =>
-            //{
-            //    options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
-            //});
 
             builder.Services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
 
-                // ? JWT autentifikasiyas? üçün Swagger konfiqurasiyas?
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Name = "Authorization",
@@ -99,14 +94,9 @@ namespace HospitalManagement.Api
                     };
                 });
             //builder.Services.AddTransient<TokenBlacklistMiddleware>();
-            // Swagger v? dig?r xidm?tl?r
-            //builder.Services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Doctor API", Version = "v1" });
-            //});
 
-         
 
+   
             builder.Services.AddControllers();
             builder.Services.AddControllers().AddJsonOptions(options =>
             {
@@ -120,16 +110,7 @@ namespace HospitalManagement.Api
             app.UseForwardedHeaders();
             //app.UseMiddleware<IpRestrictionMiddleware>();
             app.MapHub<NotificationHub>("/notificationHub");
-            //app.Use(async (context, next) =>
-            //{
-            //    await next();
-
-            //    if (context.Response.Headers.ContainsKey("Clear-Swagger-Token"))
-            //    {
-            //        context.Response.Cookies.Delete("Authorization"); // Cookie-d?n sil
-            //    }
-            //});
-            // Configure the HTTP request pipeline.
+  
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -141,7 +122,6 @@ namespace HospitalManagement.Api
                 ScreenshotBlocker.BlockScreenshots();
             }
 
-            // **Security Headers (Clickjacking və MIME spoofing qoruması)**
             app.Use(async (context, next) =>
             {
                 context.Response.Headers["X-Content-Type-Options"] = "nosniff";
@@ -151,7 +131,6 @@ namespace HospitalManagement.Api
             });
             ProcessBlocker.StartMonitoring();
             //app.UseMiddleware<TokenBlacklistMiddleware>();
-            //app.MapGet("/", () => "Sistem işləyir!");
             app.UseCors("AllowAnyOrigin");
             app.UseHttpsRedirection();
             app.UseAuthentication();

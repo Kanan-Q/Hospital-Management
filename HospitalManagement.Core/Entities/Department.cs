@@ -14,5 +14,7 @@ namespace HospitalManagement.Core.Entities
         public ICollection<Doctor> Doctors { get; set; }
         public ICollection<Sanitary> Sanitaries { get; set; }
         public ICollection<Therapist> Therapists { get; set; }
+        public ICollection<Equipment> Equipments { get; set; }
+        public ICollection<Diagnostic> Diagnostics { get; set; }
     }
 }
