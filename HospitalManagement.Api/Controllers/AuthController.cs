@@ -68,10 +68,6 @@ namespace HospitalManagement.Api.Controllers
             {
                 return BadRequest(new { message = "Email or Name already in use." });
             }
-            //if (!Enum.TryParse(model.Gender, true, out Gender gender))
-            //{
-            //    return BadRequest("Invalid gender. Please use 'Male' or 'Female'.");
-            //}
 
             Doctor doctor = new Doctor
             {
@@ -151,7 +147,7 @@ namespace HospitalManagement.Api.Controllers
                 return NotFound(new { message = "Doctor not found." });
             }
 
-            return Ok(new { doctor.Id, doctor.Name, doctor.Surname, doctor.Age, doctor.Phone, doctor.Salary, doctor.Email, doctor.FIN, doctor.Series, doctor.Address, doctor.Department.DepartmentName, doctor.CreatedTime });
+            return Ok(new { doctor.Id, doctor.Name, doctor.Education,doctor.Birthday,doctor.Surname, doctor.Age, doctor.Phone, doctor.Salary, doctor.Email, doctor.FIN, doctor.Series, doctor.Address, doctor.Department.DepartmentName, doctor.CreatedTime });
         }
         [Authorize(Roles = "Admin")]
         [HttpGet]
