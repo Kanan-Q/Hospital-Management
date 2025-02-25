@@ -147,7 +147,7 @@ namespace HospitalManagement.Api.Controllers
                 return NotFound(new { message = "Doctor not found." });
             }
 
-            return Ok(new { doctor.Id, doctor.Name, doctor.Education,doctor.Birthday,doctor.Surname, doctor.Age, doctor.Phone, doctor.Salary, doctor.Email, doctor.FIN, doctor.Series, doctor.Address, doctor.Department.DepartmentName, doctor.CreatedTime });
+            return Ok(new { doctor.Id, doctor.Name, doctor.Education,zdoctor.Birthday,doctor.Surname, doctor.Age, doctor.Phone, doctor.Salary, doctor.Email, doctor.FIN, doctor.Series, doctor.Address, doctor.Department.DepartmentName, doctor.CreatedTime });
         }
         [Authorize(Roles = "Admin")]
         [HttpGet]
