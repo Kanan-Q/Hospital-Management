@@ -79,6 +79,7 @@ namespace HospitalManagement.Api.Controllers
                     DoctorEmail = x.Doctor.Email,
                     DoctorDepartment = x.Doctor.Department.DepartmentName,
                     Medication = x.MedicationName,
+                    Count=x.Doctor.Count,
                     Time = x.CreatedTime
                 })
                 .ToList(),
