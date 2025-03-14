@@ -11,7 +11,6 @@ namespace HospitalManagement.BL.SignalR
     {
         private static List<string> _activeUsers = new List<string>();
 
-        // Login olan istifadəçiləri əlavə edirik
         public async Task UserLoggedIn(string username)
         {
             if (!_activeUsers.Contains(username))
@@ -19,10 +18,9 @@ namespace HospitalManagement.BL.SignalR
                 _activeUsers.Add(username);
             }
 
-            await Clients.All.SendAsync("UserStatusChanged", username, true); // true -> aktiv oldu
+            await Clients.All.SendAsync("UserStatusChanged", username, true); 
         }
 
-        // Logout olan istifadəçiləri siyahıdan çıxarırıq
         public async Task UserLoggedOut(string username)
         {
             if (_activeUsers.Contains(username))
@@ -30,10 +28,9 @@ namespace HospitalManagement.BL.SignalR
                 _activeUsers.Remove(username);
             }
 
-            await Clients.All.SendAsync("UserStatusChanged", username, false); // false -> deaktiv oldu
+            await Clients.All.SendAsync("UserStatusChanged", username, false); 
         }
 
-        // Aktiv istifadəçilərin siyahısını gətiririk
         public Task<List<string>> GetActiveUsers()
         {
             return Task.FromResult(_activeUsers);

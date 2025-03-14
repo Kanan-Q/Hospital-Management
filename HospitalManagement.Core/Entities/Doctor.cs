@@ -25,6 +25,7 @@ namespace HospitalManagement.Core.Entities
         [JsonIgnore]
         public ICollection<DoctorPatient> DoctorPatients { get; set; }
         public ICollection<Prescription> Prescriptions { get; set; }
+        public ICollection<DoctorWorkDay> WorkDays { get; set; } 
 
 
     }

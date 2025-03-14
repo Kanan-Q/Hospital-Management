@@ -26,5 +26,6 @@ namespace HospitalManagement.Core.Entities
         public byte Count { get; set; } = 1;
         public int? DepartmentId { get; set; }
         public Department? Department { get; set; }
+        public ICollection<NurseWorkDay> NurseWorkDays { get; set; }
     }
 }

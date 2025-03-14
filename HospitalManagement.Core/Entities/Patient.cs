@@ -18,7 +18,10 @@ namespace HospitalManagement.Core.Entities
         public string FIN { get; set; }
         public string Series { get; set; }
         public string Address { get; set; }
+        public string Phone { get; set; }
+        public DateOnly BirthDay { get; set; }
         public byte Count { get; set; } = 1;
+        public Gender Gender {get; set;}
         [JsonIgnore]
         public ICollection<DoctorPatient> DoctorPatients { get; set; }
         //[JsonIgnore]

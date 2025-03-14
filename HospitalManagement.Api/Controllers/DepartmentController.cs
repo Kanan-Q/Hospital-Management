@@ -9,18 +9,18 @@ namespace HospitalManagement.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    [Authorize(Roles ="Admin")]
+    [Authorize(Roles = "Admin")]
     public class DepartmentController(IDepartmentRepository _repo) : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetAll()=> Ok(await _repo.GetAllAsync());
-        
+        public async Task<IActionResult> GetAll() => Ok(await _repo.GetAllAsync());
+
         [HttpPost]
         public async Task<IActionResult> Create(DepartmentCreateDTO dto)
         {
             Department department = new Department()
             {
-                DepartmentName=dto.DepartmentName,
+                DepartmentName = dto.DepartmentName,
             };
             await _repo.AddAsync(department);
             return Ok();
@@ -34,16 +34,18 @@ namespace HospitalManagement.Api.Controllers
             return Ok();
         }
         [HttpGet]
-        public async Task<IActionResult> Search([FromQuery] string query) => Ok(await _repo.SearchAsync(query));
+        public async Task<IActionResult> Search(string query) => Ok(await _repo.SearchAsync(query));
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id) => Ok(await _repo.GetByIdAsync(id));
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id,DepartmentUpdateDTO dto)
+        public async Task<IActionResult> Update(int id, DepartmentUpdateDTO dto)
         {
-            var department=await _repo.GetByIdAsync(id);
-            department.DepartmentName=dto.DepartmentName;
+            var department = await _repo.GetByIdAsync(id);
+            department.DepartmentName = dto.DepartmentName;
             await _repo.UpdateAsync(department);
             return Ok();
         }
+        [HttpGet]
+        public async Task<IActionResult> SearchByDepartment(string department) => Ok(await _repo.GetSearchByDepartments(department));
     }
 }

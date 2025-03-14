@@ -2,7 +2,6 @@
 using HospitalManagement.Core.Enum;
 using HospitalManagement.Core.Repositories;
 using HospitalManagement.DataAccess.Context;
-using HospitalManagement.DataAccess.Migrations;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -34,11 +33,14 @@ namespace HospitalManagement.DataAccess.Repositories
             data.Age = patient.Age;
             data.Email = patient.Email;
             data.FIN = patient.FIN;
+            data.BirthDay = patient.BirthDay;
+            data.Gender = patient.Gender;
             data.Series = patient.Series;
             data.Address = patient.Address;
+            data.Phone = patient.Phone;
             await _sql.SaveChangesAsync();
         }
-        //public async Task<ICollection<Patient>> GetPatientsByGenderAsync(int gender) => await _sql.Patients.Where(x => x.Gender == (Gender)gender).ToListAsync();
+        public async Task<ICollection<Patient>> GetPatientsByGenderAsync(int gender) => await _sql.Patients.Where(x => x.Gender == (Gender)gender).ToListAsync();
         //public async Task<ICollection<Patient>> GetPatientsByDepartmentAsync(string department) => await _sql.Patients.Include(x => x.Department.DepartmentName == department).ToListAsync();
         public async Task<Patient?> GetByIdAsync(int id) => await _sql.Patients.Include(x => x.Prescriptions).ThenInclude(x=>x.Doctor.Department).Where(x => x.Id == id).FirstOrDefaultAsync();
         public async Task<Patient?> GetByIdForDoctorAsync(int id, ClaimsPrincipal user)
@@ -60,6 +62,7 @@ namespace HospitalManagement.DataAccess.Repositories
                     FIN = p.FIN,
                     Series = p.Series,
                     Address = p.Address,
+                    Phone=p.Phone,
                     DoctorPatients = p.DoctorPatients,
                     Prescriptions = p.Prescriptions
                         .Where(pr => pr.Doctor.Email == userEmail)

@@ -407,6 +407,27 @@
         }
       }
     },
+    "/api/Department/SearchByDepartment": {
+      "get": {
+        "tags": [
+          "Department"
+        ],
+        "parameters": [
+          {
+            "name": "department",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Diagnostic/GetAll": {
       "get": {
         "tags": [
@@ -595,6 +616,255 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DiagnosticWorkDay/AddWorkDays": {
+      "post": {
+        "tags": [
+          "DiagnosticWorkDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DiagnosticWorkDayDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DiagnosticWorkDayDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DiagnosticWorkDayDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DiagnosticWorkDay/GetAllWorkDays": {
+      "get": {
+        "tags": [
+          "DiagnosticWorkDay"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DiagnosticWorkDay/DeleteAllWorkDaysByDiagnostic/{id}": {
+      "delete": {
+        "tags": [
+          "DiagnosticWorkDay"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DiagnosticWorkDay/UpdateWorkDays": {
+      "put": {
+        "tags": [
+          "DiagnosticWorkDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DiagnosticWorkDayDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DiagnosticWorkDayDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DiagnosticWorkDayDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Expense/GetAll": {
+      "get": {
+        "tags": [
+          "Expense"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Expense/Create": {
+      "post": {
+        "tags": [
+          "Expense"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExpenseCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExpenseCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExpenseCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Expense/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "Expense"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Expense/Search": {
+      "get": {
+        "tags": [
+          "Expense"
+        ],
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Expense/GetById/{id}": {
+      "get": {
+        "tags": [
+          "Expense"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Expense/Update/{id}": {
+      "put": {
+        "tags": [
+          "Expense"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExpenseUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExpenseUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExpenseUpdateDTO"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -797,38 +1067,26 @@
         }
       }
     },
-    "/api/Expense/GetAll": {
-      "get": {
-        "tags": [
-          "Expense"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Expense/Create": {
+    "/api/EquipmentWorkDay/AddWorkDays": {
       "post": {
         "tags": [
-          "Expense"
+          "EquipmentWorkDay"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ExpenseCreateDTO"
+                "$ref": "#/components/schemas/EquipmentWorkDayDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ExpenseCreateDTO"
+                "$ref": "#/components/schemas/EquipmentWorkDayDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ExpenseCreateDTO"
+                "$ref": "#/components/schemas/EquipmentWorkDayDTO"
               }
             }
           }
@@ -840,10 +1098,22 @@
         }
       }
     },
-    "/api/Expense/Delete/{id}": {
+    "/api/EquipmentWorkDay/GetAllWorkDays": {
+      "get": {
+        "tags": [
+          "EquipmentWorkDay"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/EquipmentWorkDay/DeleteAllWorkDaysByEquipment/{id}": {
       "delete": {
         "tags": [
-          "Expense"
+          "EquipmentWorkDay"
         ],
         "parameters": [
           {
@@ -863,81 +1133,26 @@
         }
       }
     },
-    "/api/Expense/Search": {
-      "get": {
-        "tags": [
-          "Expense"
-        ],
-        "parameters": [
-          {
-            "name": "query",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Expense/GetById/{id}": {
-      "get": {
-        "tags": [
-          "Expense"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Expense/Update/{id}": {
+    "/api/EquipmentWorkDay/UpdateWorkDays": {
       "put": {
         "tags": [
-          "Expense"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
+          "EquipmentWorkDay"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ExpenseUpdateDTO"
+                "$ref": "#/components/schemas/EquipmentWorkDayDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ExpenseUpdateDTO"
+                "$ref": "#/components/schemas/EquipmentWorkDayDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ExpenseUpdateDTO"
+                "$ref": "#/components/schemas/EquipmentWorkDayDTO"
               }
             }
           }
@@ -1137,6 +1352,103 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NurseWorkDay/AddWorkDays": {
+      "post": {
+        "tags": [
+          "NurseWorkDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NurseWorkDayDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NurseWorkDayDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NurseWorkDayDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NurseWorkDay/GetAllWorkDays": {
+      "get": {
+        "tags": [
+          "NurseWorkDay"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NurseWorkDay/DeleteAllWorkDaysByNurse/{id}": {
+      "delete": {
+        "tags": [
+          "NurseWorkDay"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NurseWorkDay/UpdateWorkDays": {
+      "put": {
+        "tags": [
+          "NurseWorkDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NurseWorkDayDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NurseWorkDayDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NurseWorkDayDTO"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -1396,6 +1708,28 @@
       "get": {
         "tags": [
           "Patient"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Patient/GetPatientByGender": {
+      "get": {
+        "tags": [
+          "Patient"
+        ],
+        "parameters": [
+          {
+            "name": "gender",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -1694,6 +2028,103 @@
         }
       }
     },
+    "/api/SanitaryWorkDay/AddWorkDays": {
+      "post": {
+        "tags": [
+          "SanitaryWorkDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SanitaryWorkDayDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SanitaryWorkDayDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SanitaryWorkDayDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SanitaryWorkDay/GetAllWorkDays": {
+      "get": {
+        "tags": [
+          "SanitaryWorkDay"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SanitaryWorkDay/DeleteAllWorkDaysBySanitary/{id}": {
+      "delete": {
+        "tags": [
+          "SanitaryWorkDay"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SanitaryWorkDay/UpdateWorkDays": {
+      "put": {
+        "tags": [
+          "SanitaryWorkDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SanitaryWorkDayDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SanitaryWorkDayDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SanitaryWorkDayDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Therapist/GetAll": {
       "get": {
         "tags": [
@@ -1888,6 +2319,200 @@
           }
         }
       }
+    },
+    "/api/TherapistWorkDay/AddWorkDays": {
+      "post": {
+        "tags": [
+          "TherapistWorkDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TherapistWorkDayDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TherapistWorkDayDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TherapistWorkDayDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TherapistWorkDay/GetAllWorkDays": {
+      "get": {
+        "tags": [
+          "TherapistWorkDay"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TherapistWorkDay/DeleteAllWorkDaysByTherapist/{id}": {
+      "delete": {
+        "tags": [
+          "TherapistWorkDay"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TherapistWorkDay/UpdateWorkDays": {
+      "put": {
+        "tags": [
+          "TherapistWorkDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TherapistWorkDayDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TherapistWorkDayDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TherapistWorkDayDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/WorkDay/AddWorkDays": {
+      "post": {
+        "tags": [
+          "WorkDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkDayDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkDayDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkDayDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/WorkDay/GetAllWorkDays": {
+      "get": {
+        "tags": [
+          "WorkDay"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/WorkDay/DeleteAllWorkDaysByDoctor/{id}": {
+      "delete": {
+        "tags": [
+          "WorkDay"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/WorkDay/UpdateWorkDays": {
+      "put": {
+        "tags": [
+          "WorkDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkDayDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkDayDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkDayDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -2032,6 +2657,54 @@
           "birthday": {
             "type": "string",
             "format": "date"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DiagnosticWorkDayDTO": {
+        "type": "object",
+        "properties": {
+          "diagnosticId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "diagnosticWorkDays": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiagnosticWorkDayDetailDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DiagnosticWorkDayDetailDTO": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagnosticWorkHours": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiagnosticWorkHourDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DiagnosticWorkHourDTO": {
+        "type": "object",
+        "properties": {
+          "startTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "endTime": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -2302,6 +2975,54 @@
         },
         "additionalProperties": false
       },
+      "EquipmentWorkDayDTO": {
+        "type": "object",
+        "properties": {
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipmentWorkDays": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EquipmentWorkDayDetailDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EquipmentWorkDayDetailDTO": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "string",
+            "nullable": true
+          },
+          "equipmentWorkHours": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EquipmentWorkHourDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EquipmentWorkHourDTO": {
+        "type": "object",
+        "properties": {
+          "startTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "endTime": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ExpenseCreateDTO": {
         "type": "object",
         "properties": {
@@ -2500,6 +3221,54 @@
         },
         "additionalProperties": false
       },
+      "NurseWorkDayDTO": {
+        "type": "object",
+        "properties": {
+          "nurseId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nurseWorkDays": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NurseWorkDayDetailDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NurseWorkDayDetailDTO": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "string",
+            "nullable": true
+          },
+          "nurseWorkHours": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NurseWorkHourDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NurseWorkHourDTO": {
+        "type": "object",
+        "properties": {
+          "startTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "endTime": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "PatientAccountLoginDTO": {
         "type": "object",
         "properties": {
@@ -2559,6 +3328,10 @@
             "type": "string",
             "nullable": true
           },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
           "address": {
             "type": "string",
             "nullable": true
@@ -2566,6 +3339,14 @@
           "count": {
             "type": "integer",
             "format": "int32"
+          },
+          "gender": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "birthDay": {
+            "type": "string",
+            "format": "date"
           },
           "doctorId": {
             "type": "array",
@@ -2605,6 +3386,10 @@
             "type": "string",
             "nullable": true
           },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
           "address": {
             "type": "string",
             "nullable": true
@@ -2612,6 +3397,14 @@
           "count": {
             "type": "integer",
             "format": "int32"
+          },
+          "gender": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "birthDay": {
+            "type": "string",
+            "format": "date"
           },
           "doctorId": {
             "type": "array",
@@ -2772,6 +3565,54 @@
         },
         "additionalProperties": false
       },
+      "SanitaryWorkDayDTO": {
+        "type": "object",
+        "properties": {
+          "sanitaryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sanitaryWorkDays": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SanitaryWorkDayDetailDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SanitaryWorkDayDetailDTO": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "string",
+            "nullable": true
+          },
+          "sanitaryWorkHours": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SanitaryWorkHourDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SanitaryWorkHourDTO": {
+        "type": "object",
+        "properties": {
+          "startTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "endTime": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "TherapistCreateDTO": {
         "type": "object",
         "properties": {
@@ -2892,6 +3733,102 @@
           "departmentId": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TherapistWorkDayDTO": {
+        "type": "object",
+        "properties": {
+          "therapistId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "therapistWorkDays": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TherapistWorkDayDetailDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TherapistWorkDayDetailDTO": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "string",
+            "nullable": true
+          },
+          "therapistWorkHours": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TherapistWorkHourDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TherapistWorkHourDTO": {
+        "type": "object",
+        "properties": {
+          "startTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "endTime": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WorkDayDetailDto": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "string",
+            "nullable": true
+          },
+          "workHours": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WorkHourDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WorkDayDto": {
+        "type": "object",
+        "properties": {
+          "doctorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "workDays": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WorkDayDetailDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WorkHourDTO": {
+        "type": "object",
+        "properties": {
+          "startTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "endTime": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

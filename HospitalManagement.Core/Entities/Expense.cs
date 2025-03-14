@@ -16,5 +16,6 @@ namespace HospitalManagement.Core.Entities
         public decimal? Quantity {  get; set; }
         public decimal? Expenses {  get; set; }
         public DateOnly? BuyDate { get; set; }
+        public byte Count { get; set; } = 1;
     }
 }

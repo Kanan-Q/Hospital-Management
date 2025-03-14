@@ -10,6 +10,7 @@ namespace HospitalManagement.Core.Entities
     public class Department:BaseEntity
     {
         public string DepartmentName { get; set; }
+        public byte Count { get; set; } = 1;
         public ICollection<Nurse> Nurses { get; set; }
         public ICollection<Doctor> Doctors { get; set; }
         public ICollection<Sanitary> Sanitaries { get; set; }

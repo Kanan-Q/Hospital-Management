@@ -70,7 +70,10 @@ namespace HospitalManagement.Api.Controllers
                 Age = patient.Age,
                 FIN = patient.FIN,
                 Email = patient.Email,
+                BirthDay=patient.BirthDay,
+                Gender = patient.Gender,
                 Series = patient.Series,
+                Phone=patient.Phone,
                 Address = patient.Address,
                 receipt = patient.Prescriptions.Select(x => new
                 {

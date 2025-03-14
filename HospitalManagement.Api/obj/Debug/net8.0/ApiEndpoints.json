@@ -238,6 +238,22 @@
   },
   {
     "ContainingType": "HospitalManagement.Api.Controllers.DepartmentController",
+    "Method": "SearchByDepartment",
+    "RelativePath": "api/Department/SearchByDepartment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.DepartmentController",
     "Method": "Update",
     "RelativePath": "api/Department/Update/{id}",
     "HttpMethod": "PUT",
@@ -385,6 +401,159 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "HospitalManagement.Api.Controllers.DiagnosticWorkDayController",
+    "Method": "AddWorkDays",
+    "RelativePath": "api/DiagnosticWorkDay/AddWorkDays",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.DiagnosticWorkDay.DiagnosticWorkDayDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.DiagnosticWorkDayController",
+    "Method": "DeleteAllWorkDaysByDiagnostic",
+    "RelativePath": "api/DiagnosticWorkDay/DeleteAllWorkDaysByDiagnostic/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.DiagnosticWorkDayController",
+    "Method": "GetAllWorkDays",
+    "RelativePath": "api/DiagnosticWorkDay/GetAllWorkDays",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.DiagnosticWorkDayController",
+    "Method": "UpdateWorkDays",
+    "RelativePath": "api/DiagnosticWorkDay/UpdateWorkDays",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.DiagnosticWorkDay.DiagnosticWorkDayDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
+    "Method": "Create",
+    "RelativePath": "api/Expense/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.Expense.ExpenseCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
+    "Method": "Delete",
+    "RelativePath": "api/Expense/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
+    "Method": "GetAll",
+    "RelativePath": "api/Expense/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
+    "Method": "GetById",
+    "RelativePath": "api/Expense/GetById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
+    "Method": "Search",
+    "RelativePath": "api/Expense/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
+    "Method": "Update",
+    "RelativePath": "api/Expense/Update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.Expense.ExpenseUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "HospitalManagement.Api.Controllers.EquipmentController",
     "Method": "Create",
     "RelativePath": "api/Equipment/Create",
@@ -512,25 +681,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
-    "Method": "Create",
-    "RelativePath": "api/Expense/Create",
+    "ContainingType": "HospitalManagement.Api.Controllers.EquipmentWorkDayController",
+    "Method": "AddWorkDays",
+    "RelativePath": "api/EquipmentWorkDay/AddWorkDays",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "HospitalManagement.BL.DTO.Expense.ExpenseCreateDTO",
+        "Type": "HospitalManagement.BL.DTO.EquipmentWorkDay.EquipmentWorkDayDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
-    "Method": "Delete",
-    "RelativePath": "api/Expense/Delete/{id}",
+    "ContainingType": "HospitalManagement.Api.Controllers.EquipmentWorkDayController",
+    "Method": "DeleteAllWorkDaysByEquipment",
+    "RelativePath": "api/EquipmentWorkDay/DeleteAllWorkDaysByEquipment/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -544,9 +713,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
-    "Method": "GetAll",
-    "RelativePath": "api/Expense/GetAll",
+    "ContainingType": "HospitalManagement.Api.Controllers.EquipmentWorkDayController",
+    "Method": "GetAllWorkDays",
+    "RelativePath": "api/EquipmentWorkDay/GetAllWorkDays",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -554,53 +723,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
-    "Method": "GetById",
-    "RelativePath": "api/Expense/GetById/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
-    "Method": "Search",
-    "RelativePath": "api/Expense/Search",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "query",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HospitalManagement.Api.Controllers.ExpenseController",
-    "Method": "Update",
-    "RelativePath": "api/Expense/Update/{id}",
+    "ContainingType": "HospitalManagement.Api.Controllers.EquipmentWorkDayController",
+    "Method": "UpdateWorkDays",
+    "RelativePath": "api/EquipmentWorkDay/UpdateWorkDays",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
         "Name": "dto",
-        "Type": "HospitalManagement.BL.DTO.Expense.ExpenseUpdateDTO",
+        "Type": "HospitalManagement.BL.DTO.EquipmentWorkDay.EquipmentWorkDayDTO",
         "IsRequired": true
       }
     ],
@@ -734,6 +866,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "HospitalManagement.Api.Controllers.NurseWorkDayController",
+    "Method": "AddWorkDays",
+    "RelativePath": "api/NurseWorkDay/AddWorkDays",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.NurseWorkDay.NurseWorkDayDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.NurseWorkDayController",
+    "Method": "DeleteAllWorkDaysByNurse",
+    "RelativePath": "api/NurseWorkDay/DeleteAllWorkDaysByNurse/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.NurseWorkDayController",
+    "Method": "GetAllWorkDays",
+    "RelativePath": "api/NurseWorkDay/GetAllWorkDays",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.NurseWorkDayController",
+    "Method": "UpdateWorkDays",
+    "RelativePath": "api/NurseWorkDay/UpdateWorkDays",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.NurseWorkDay.NurseWorkDayDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "HospitalManagement.Api.Controllers.PatientController",
     "Method": "AllPatients",
     "RelativePath": "api/Patient/AllPatients",
@@ -803,6 +993,22 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.PatientController",
+    "Method": "GetPatientByGender",
+    "RelativePath": "api/Patient/GetPatientByGender",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gender",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -1077,6 +1283,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "HospitalManagement.Api.Controllers.SanitaryWorkDayController",
+    "Method": "AddWorkDays",
+    "RelativePath": "api/SanitaryWorkDay/AddWorkDays",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.SanitaryWorkDay.SanitaryWorkDayDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.SanitaryWorkDayController",
+    "Method": "DeleteAllWorkDaysBySanitary",
+    "RelativePath": "api/SanitaryWorkDay/DeleteAllWorkDaysBySanitary/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.SanitaryWorkDayController",
+    "Method": "GetAllWorkDays",
+    "RelativePath": "api/SanitaryWorkDay/GetAllWorkDays",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.SanitaryWorkDayController",
+    "Method": "UpdateWorkDays",
+    "RelativePath": "api/SanitaryWorkDay/UpdateWorkDays",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.SanitaryWorkDay.SanitaryWorkDayDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "HospitalManagement.Api.Controllers.TherapistController",
     "Method": "Create",
     "RelativePath": "api/Therapist/Create",
@@ -1198,6 +1462,122 @@
       {
         "Name": "dto",
         "Type": "HospitalManagement.BL.DTO.Therapist.TherapistUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.TherapistWorkDayController",
+    "Method": "AddWorkDays",
+    "RelativePath": "api/TherapistWorkDay/AddWorkDays",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.TherapistWorkDay.TherapistWorkDayDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.TherapistWorkDayController",
+    "Method": "DeleteAllWorkDaysByTherapist",
+    "RelativePath": "api/TherapistWorkDay/DeleteAllWorkDaysByTherapist/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.TherapistWorkDayController",
+    "Method": "GetAllWorkDays",
+    "RelativePath": "api/TherapistWorkDay/GetAllWorkDays",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalManagement.Api.Controllers.TherapistWorkDayController",
+    "Method": "UpdateWorkDays",
+    "RelativePath": "api/TherapistWorkDay/UpdateWorkDays",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.TherapistWorkDay.TherapistWorkDayDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkDayController",
+    "Method": "AddWorkDays",
+    "RelativePath": "api/WorkDay/AddWorkDays",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.WorkDayDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkDayController",
+    "Method": "DeleteAllWorkDaysByDoctor",
+    "RelativePath": "api/WorkDay/DeleteAllWorkDaysByDoctor/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkDayController",
+    "Method": "GetAllWorkDays",
+    "RelativePath": "api/WorkDay/GetAllWorkDays",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkDayController",
+    "Method": "UpdateWorkDays",
+    "RelativePath": "api/WorkDay/UpdateWorkDays",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HospitalManagement.BL.DTO.WorkDayDto",
         "IsRequired": true
       }
     ],

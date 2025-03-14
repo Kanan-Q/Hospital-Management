@@ -1,6 +1,7 @@
 ﻿using HospitalManagement.BL.DTO;
 using HospitalManagement.BL.DTO.Patient;
 using HospitalManagement.Core.Entities;
+using HospitalManagement.Core.Enum;
 using HospitalManagement.Core.Repositories;
 using HospitalManagement.DataAccess.Context;
 using HospitalManagement.DataAccess.Repositories;
@@ -32,9 +33,12 @@ namespace HospitalManagement.Api.Controllers
                 x.Count,
                 x.CreatedTime,
                 x.FIN,
+                x.Phone,
                 x.Series,
+                x.Gender,
+                x.BirthDay,
                 x.Address,
-                Prescription = x.Prescriptions.Select(x => new { x.Doctor.Name, x.MedicationName }).ToList(),
+                Prescription = x.Prescriptions.Select(x => new { x.Doctor.Name, x.MedicationName}).ToList(),
                 Doctors = x.DoctorPatients.Select(y => new { y.Doctor.Name, y.Doctor.Surname }).ToList()
 
             }).ToList();
@@ -54,6 +58,9 @@ namespace HospitalManagement.Api.Controllers
                 Age = dto.Age,
                 Email = dto.Email,
                 FIN = dto.FIN,
+                Phone=dto.Phone,
+                Gender=(Gender)dto.Gender,
+                BirthDay=dto.BirthDay,
                 Series = dto.Series,
                 Address = dto.Address,
             };
@@ -90,6 +97,9 @@ namespace HospitalManagement.Api.Controllers
             patient.Email = dto.Email;
             patient.FIN = dto.FIN;
             patient.Series = dto.Series;
+            patient.Phone = dto.Phone;
+            patient.BirthDay = dto.BirthDay;
+            patient.Gender = (Gender)dto.Gender;
             patient.Address = dto.Address;
             await _repo.UpdateAsync(patient);
             return Ok();
@@ -197,6 +207,7 @@ namespace HospitalManagement.Api.Controllers
                 Surname = patient.Surname,
                 Email = patient.Email,
                 Series = patient.Series,
+                Phone=patient.Phone,
                 Age = patient.Age,
                 receipt = patient.Prescriptions.Select(x => new
                 {
@@ -206,8 +217,8 @@ namespace HospitalManagement.Api.Controllers
                 .ToList(),
             });
         }
-        //[HttpGet]
-        //public async Task<IActionResult> GetPatientByGender(int gender) => Ok(await _repo.GetPatientsByGenderAsync(gender));
+        [HttpGet]
+        public async Task<IActionResult> GetPatientByGender(int gender) => Ok(await _repo.GetPatientsByGenderAsync(gender));
         //[HttpGet]
         //public async Task<IActionResult> GetPatientByDepartment(string department) => Ok(await _repo.GetPatientsByDepartmentAsync(department));
     }

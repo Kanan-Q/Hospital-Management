@@ -41,10 +41,10 @@ namespace HospitalManagement.DataAccess.Repositories
             data.Gender = therapist.Gender;
             await _sql.SaveChangesAsync();
         }
-        public async Task<ICollection<Therapist>> GetTherapistsByGenderAsync(int gender) => await _sql.Therapists.Where(x => x.Gender == (Gender)gender).ToListAsync();
-        public async Task<ICollection<Therapist>> GetTherapistsByDepartmentAsync(string department) => await _sql.Therapists.Where(x => x.Department.DepartmentName == department).ToListAsync();
+        public async Task<ICollection<Therapist>> GetTherapistsByGenderAsync(int gender) => await _sql.Therapists.Where(x => x.Gender == (Gender)gender).AsNoTracking().ToListAsync();
+        public async Task<ICollection<Therapist>> GetTherapistsByDepartmentAsync(string department) => await _sql.Therapists.Where(x => x.Department.DepartmentName == department).AsNoTracking().ToListAsync();
         public async Task<IEnumerable<Therapist>> GetAllAsync() => await _sql.Therapists.Include(x => x.Department).AsNoTracking().ToListAsync();
-        public async Task<Therapist?> GetByIdAsync(int id) => await _sql.Therapists.Include(x => x.Department).Where(x => x.Id == id).FirstOrDefaultAsync();
-        public async Task<IEnumerable<Therapist>> SearchAsync(string query) => await _sql.Therapists.Where(p => p.Name.Contains(query) || p.Surname.Contains(query) || p.Email.Contains(query) || p.FIN.Contains(query) || p.Series.Contains(query) || p.Age.ToString().Contains(query)).ToListAsync();
+        public async Task<Therapist?> GetByIdAsync(int id) => await _sql.Therapists.Include(x => x.Department).Where(x => x.Id == id).AsNoTracking().FirstOrDefaultAsync();
+        public async Task<IEnumerable<Therapist>> SearchAsync(string query) => await _sql.Therapists.Where(p => p.Name.Contains(query) || p.Surname.Contains(query) || p.Email.Contains(query) || p.FIN.Contains(query) || p.Series.Contains(query) || p.Age.ToString().Contains(query)).AsNoTracking().ToListAsync();
     }
 }

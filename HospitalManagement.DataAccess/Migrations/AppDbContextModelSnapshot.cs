@@ -112,6 +112,9 @@ namespace HospitalManagement.DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<byte>("Count")
+                        .HasColumnType("tinyint");
+
                     b.Property<DateTime>("CreatedTime")
                         .HasColumnType("datetime2");
 
@@ -129,6 +132,52 @@ namespace HospitalManagement.DataAccess.Migrations
                         .IsUnique();
 
                     b.ToTable("Departments");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.DiagnosticWorkDay", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Day")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DiagnosticId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DiagnosticId");
+
+                    b.ToTable("DiagnosticWorkDays", (string)null);
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.DiagnosticWorkHour", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("DiagnosticWorkDayId")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("time");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DiagnosticWorkDayId");
+
+                    b.ToTable("DiagnosticWorkHours", (string)null);
                 });
 
             modelBuilder.Entity("HospitalManagement.Core.Entities.Doctor", b =>
@@ -224,6 +273,52 @@ namespace HospitalManagement.DataAccess.Migrations
                     b.ToTable("DoctorPatients");
                 });
 
+            modelBuilder.Entity("HospitalManagement.Core.Entities.DoctorWorkDay", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Day")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DoctorId");
+
+                    b.ToTable("WorkDays", (string)null);
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.DoctorWorkHour", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("DoctorWorkDayId")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("time");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DoctorWorkDayId");
+
+                    b.ToTable("WorkHours", (string)null);
+                });
+
             modelBuilder.Entity("HospitalManagement.Core.Entities.Equipment", b =>
                 {
                     b.Property<int>("Id")
@@ -306,6 +401,52 @@ namespace HospitalManagement.DataAccess.Migrations
                     b.ToTable("Equipments");
                 });
 
+            modelBuilder.Entity("HospitalManagement.Core.Entities.EquipmentWorkDay", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Day")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EquipmentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EquipmentId");
+
+                    b.ToTable("EquipmentWorkDays", (string)null);
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.EquipmentWorkHour", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("time");
+
+                    b.Property<int>("EquipmentWorkDayId")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("time");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EquipmentWorkDayId");
+
+                    b.ToTable("EquipmentWorkHours", (string)null);
+                });
+
             modelBuilder.Entity("HospitalManagement.Core.Entities.Expense", b =>
                 {
                     b.Property<int>("Id")
@@ -316,6 +457,9 @@ namespace HospitalManagement.DataAccess.Migrations
 
                     b.Property<DateOnly?>("BuyDate")
                         .HasColumnType("date");
+
+                    b.Property<byte>("Count")
+                        .HasColumnType("tinyint");
 
                     b.Property<DateTime>("CreatedTime")
                         .HasColumnType("datetime2");
@@ -435,6 +579,52 @@ namespace HospitalManagement.DataAccess.Migrations
                     b.ToTable("Nurses");
                 });
 
+            modelBuilder.Entity("HospitalManagement.Core.Entities.NurseWorkDay", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Day")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NurseId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NurseId");
+
+                    b.ToTable("NurseWorkDays", (string)null);
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.NurseWorkHour", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("time");
+
+                    b.Property<int>("NurseWorkDayId")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("time");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NurseWorkDayId");
+
+                    b.ToTable("NurseWorkHours", (string)null);
+                });
+
             modelBuilder.Entity("HospitalManagement.Core.Entities.Patient", b =>
                 {
                     b.Property<int>("Id")
@@ -452,6 +642,9 @@ namespace HospitalManagement.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("int");
 
+                    b.Property<DateOnly>("BirthDay")
+                        .HasColumnType("date");
+
                     b.Property<byte>("Count")
                         .HasColumnType("tinyint");
 
@@ -467,6 +660,9 @@ namespace HospitalManagement.DataAccess.Migrations
                         .HasColumnType("nvarchar(8)")
                         .HasComment("Max 8 symbol");
 
+                    b.Property<int>("Gender")
+                        .HasColumnType("int");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -474,6 +670,10 @@ namespace HospitalManagement.DataAccess.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)")
                         .HasComment("You can use 20 symbol");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Series")
                         .HasMaxLength(9)
@@ -632,6 +832,52 @@ namespace HospitalManagement.DataAccess.Migrations
                     b.ToTable("Sanitaries");
                 });
 
+            modelBuilder.Entity("HospitalManagement.Core.Entities.SanitaryWorkDay", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Day")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SanitaryId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SanitaryId");
+
+                    b.ToTable("SanitaryWorkDays", (string)null);
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.SanitaryWorkHour", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("time");
+
+                    b.Property<int>("SanitaryWorkDayId")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("time");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SanitaryWorkDayId");
+
+                    b.ToTable("SanitaryWorkHours", (string)null);
+                });
+
             modelBuilder.Entity("HospitalManagement.Core.Entities.Therapist", b =>
                 {
                     b.Property<int>("Id")
@@ -714,6 +960,52 @@ namespace HospitalManagement.DataAccess.Migrations
                     b.ToTable("Therapists");
                 });
 
+            modelBuilder.Entity("HospitalManagement.Core.Entities.TherapistWorkDay", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Day")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TherapistId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TherapistId");
+
+                    b.ToTable("TherapistWorkDays", (string)null);
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.TherapistWorkHour", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("time");
+
+                    b.Property<int>("TherapistWorkDayId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TherapistWorkDayId");
+
+                    b.ToTable("TherapistWorkHours", (string)null);
+                });
+
             modelBuilder.Entity("HospitalManagement.Core.Entities.Common.Diagnostic", b =>
                 {
                     b.HasOne("HospitalManagement.Core.Entities.Department", "Department")
@@ -723,6 +1015,28 @@ namespace HospitalManagement.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("Department");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.DiagnosticWorkDay", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.Common.Diagnostic", "Diagnostic")
+                        .WithMany("DiagnosticWorkDays")
+                        .HasForeignKey("DiagnosticId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Diagnostic");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.DiagnosticWorkHour", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.DiagnosticWorkDay", "DiagnosticWorkDay")
+                        .WithMany("DiagnosticWorkHours")
+                        .HasForeignKey("DiagnosticWorkDayId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DiagnosticWorkDay");
                 });
 
             modelBuilder.Entity("HospitalManagement.Core.Entities.Doctor", b =>
@@ -754,6 +1068,28 @@ namespace HospitalManagement.DataAccess.Migrations
                     b.Navigation("Patient");
                 });
 
+            modelBuilder.Entity("HospitalManagement.Core.Entities.DoctorWorkDay", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.Doctor", "Doctor")
+                        .WithMany("WorkDays")
+                        .HasForeignKey("DoctorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Doctor");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.DoctorWorkHour", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.DoctorWorkDay", "DoctorWorkDay")
+                        .WithMany("WorkHours")
+                        .HasForeignKey("DoctorWorkDayId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DoctorWorkDay");
+                });
+
             modelBuilder.Entity("HospitalManagement.Core.Entities.Equipment", b =>
                 {
                     b.HasOne("HospitalManagement.Core.Entities.Department", "Department")
@@ -765,6 +1101,28 @@ namespace HospitalManagement.DataAccess.Migrations
                     b.Navigation("Department");
                 });
 
+            modelBuilder.Entity("HospitalManagement.Core.Entities.EquipmentWorkDay", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.Equipment", "Equipment")
+                        .WithMany("EquipmentWorkDays")
+                        .HasForeignKey("EquipmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Equipment");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.EquipmentWorkHour", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.EquipmentWorkDay", "EquipmentWorkDay")
+                        .WithMany("EquipmentWorkHours")
+                        .HasForeignKey("EquipmentWorkDayId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("EquipmentWorkDay");
+                });
+
             modelBuilder.Entity("HospitalManagement.Core.Entities.Nurse", b =>
                 {
                     b.HasOne("HospitalManagement.Core.Entities.Department", "Department")
@@ -774,6 +1132,28 @@ namespace HospitalManagement.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("Department");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.NurseWorkDay", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.Nurse", "Nurse")
+                        .WithMany("NurseWorkDays")
+                        .HasForeignKey("NurseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Nurse");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.NurseWorkHour", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.NurseWorkDay", "NurseWorkDay")
+                        .WithMany("NurseWorkHours")
+                        .HasForeignKey("NurseWorkDayId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("NurseWorkDay");
                 });
 
             modelBuilder.Entity("HospitalManagement.Core.Entities.Prescription", b =>
@@ -806,6 +1186,28 @@ namespace HospitalManagement.DataAccess.Migrations
                     b.Navigation("Department");
                 });
 
+            modelBuilder.Entity("HospitalManagement.Core.Entities.SanitaryWorkDay", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.Sanitary", "Sanitary")
+                        .WithMany("SanitaryWorkDays")
+                        .HasForeignKey("SanitaryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Sanitary");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.SanitaryWorkHour", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.SanitaryWorkDay", "SanitaryWorkDay")
+                        .WithMany("SanitaryWorkHours")
+                        .HasForeignKey("SanitaryWorkDayId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("SanitaryWorkDay");
+                });
+
             modelBuilder.Entity("HospitalManagement.Core.Entities.Therapist", b =>
                 {
                     b.HasOne("HospitalManagement.Core.Entities.Department", "Department")
@@ -815,6 +1217,33 @@ namespace HospitalManagement.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("Department");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.TherapistWorkDay", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.Therapist", "Therapist")
+                        .WithMany("TherapistWorkDays")
+                        .HasForeignKey("TherapistId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Therapist");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.TherapistWorkHour", b =>
+                {
+                    b.HasOne("HospitalManagement.Core.Entities.TherapistWorkDay", "TherapistWorkDay")
+                        .WithMany("TherapistWorkHours")
+                        .HasForeignKey("TherapistWorkDayId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TherapistWorkDay");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.Common.Diagnostic", b =>
+                {
+                    b.Navigation("DiagnosticWorkDays");
                 });
 
             modelBuilder.Entity("HospitalManagement.Core.Entities.Department", b =>
@@ -832,11 +1261,43 @@ namespace HospitalManagement.DataAccess.Migrations
                     b.Navigation("Therapists");
                 });
 
+            modelBuilder.Entity("HospitalManagement.Core.Entities.DiagnosticWorkDay", b =>
+                {
+                    b.Navigation("DiagnosticWorkHours");
+                });
+
             modelBuilder.Entity("HospitalManagement.Core.Entities.Doctor", b =>
                 {
                     b.Navigation("DoctorPatients");
 
                     b.Navigation("Prescriptions");
+
+                    b.Navigation("WorkDays");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.DoctorWorkDay", b =>
+                {
+                    b.Navigation("WorkHours");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.Equipment", b =>
+                {
+                    b.Navigation("EquipmentWorkDays");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.EquipmentWorkDay", b =>
+                {
+                    b.Navigation("EquipmentWorkHours");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.Nurse", b =>
+                {
+                    b.Navigation("NurseWorkDays");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.NurseWorkDay", b =>
+                {
+                    b.Navigation("NurseWorkHours");
                 });
 
             modelBuilder.Entity("HospitalManagement.Core.Entities.Patient", b =>
@@ -844,6 +1305,26 @@ namespace HospitalManagement.DataAccess.Migrations
                     b.Navigation("DoctorPatients");
 
                     b.Navigation("Prescriptions");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.Sanitary", b =>
+                {
+                    b.Navigation("SanitaryWorkDays");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.SanitaryWorkDay", b =>
+                {
+                    b.Navigation("SanitaryWorkHours");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.Therapist", b =>
+                {
+                    b.Navigation("TherapistWorkDays");
+                });
+
+            modelBuilder.Entity("HospitalManagement.Core.Entities.TherapistWorkDay", b =>
+                {
+                    b.Navigation("TherapistWorkHours");
                 });
 #pragma warning restore 612, 618
         }

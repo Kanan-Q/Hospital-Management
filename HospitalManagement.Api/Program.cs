@@ -24,7 +24,6 @@ namespace HospitalManagement.Api
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            //builder.Services.AddScoped<IpRestrictionMiddleware>();
             builder.Services.AddDbContext<AppDbContext>(opt =>
             {
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("AzureSql"));
@@ -70,6 +69,12 @@ namespace HospitalManagement.Api
             builder.Services.AddScoped<ITherapistRepository, TherapistRepository>();
             builder.Services.AddScoped<IEquipmentRepository, EquipmentRepository>();
             builder.Services.AddScoped<IDiagnosticRepository, DiagnosticRepository>();
+            builder.Services.AddScoped<IWorkDayRepository, WorkDayRepository>();
+            builder.Services.AddScoped<ISanitaryWorkDayRepository, SanitaryWorkDayRepository>();
+            builder.Services.AddScoped<IEquipmentWorkDayRepository, EquipmentWorkDayRepository>();
+            builder.Services.AddScoped<ITherapistWorkDayRepository, TherapistWorkDayRepository>();
+            builder.Services.AddScoped<IDiagnosticWorkDayRepository, DiagnosticWorkDayRepository>();
+            builder.Services.AddScoped<INurseWorkDayRepository, NurseWorkDayRepository>();
             builder.Services.AddScoped<PatientJwtHelper>();
             builder.Services.AddCors(options =>
             {
@@ -78,7 +83,6 @@ namespace HospitalManagement.Api
                     policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod(); 
                 });
             });
-            //builder.Services.AddSingleton<IpWhitelistMiddleware>();
 
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
                 {
@@ -93,7 +97,6 @@ namespace HospitalManagement.Api
                         ClockSkew = TimeSpan.Zero
                     };
                 });
-            //builder.Services.AddTransient<TokenBlacklistMiddleware>();
 
 
    
@@ -108,7 +111,7 @@ namespace HospitalManagement.Api
             builder.Services.AddSingleton<NotificationHub>();
             var app = builder.Build();
             app.UseForwardedHeaders();
-            //app.UseMiddleware<IpRestrictionMiddleware>();
+            app.UseMiddleware<IpRestrictionMiddleware>();
             app.MapHub<NotificationHub>("/notificationHub");
   
             if (app.Environment.IsDevelopment())
@@ -130,7 +133,6 @@ namespace HospitalManagement.Api
                 await next();
             });
             ProcessBlocker.StartMonitoring();
-            //app.UseMiddleware<TokenBlacklistMiddleware>();
             app.UseCors("AllowAnyOrigin");
             app.UseHttpsRedirection();
             app.UseAuthentication();
